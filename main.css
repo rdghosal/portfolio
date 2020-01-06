@@ -5,27 +5,50 @@
 }
 
 body {
-    background-color: #bddefc;
+    background-color: rgba(15,76,129,0.80);
 }
 
 .navbar {
-    background-color:#bddefc;
-    opacity: 0.60;
-    border-bottom: 1px solid coral;
+    background-color:#0f4c81;
+
+    /* border-bottom: 1px solid coral; */
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: coral !important;
+    opacity: 0.75;
+}
+
+
+.navbar-toggler {
+    background-color: #0f4c81;
+    display: flex;
+    justify-content: space-around;
+    outline: none;
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+    color: black;
 }
 
 .active {
-    color: coral;
+    color: coral !important;
 }
 
 .jumbotron {
-    background-color: #0f4c81 !important;
+    background-color: #0f4c81;
     z-index: -1;
     position: relative;
-    height: 20vh;
+    height: 12rem;
     width: 100%;
     min-width: 300px;
     padding: 0rem !important;
+    border-bottom: 2px solid white;
+    margin-top: -2.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .japanese {
@@ -38,7 +61,7 @@ body {
     z-index: 0;
     opacity: 0.15;
     position: absolute;
-    margin-top: 2rem;
+    padding-top: 2rem;
     letter-spacing: 5rem;
     margin-bottom: 0rem;
     height: 100%;
@@ -47,16 +70,91 @@ body {
 
 .english {
     z-index: 1;
-    font-size: 50px;
+    font-size: 70px;
     /* margin-top: 50px; */
     color: #EEE;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 0.25rem;
     position: absolute;
-    text-shadow: 0px 0px 3px #666;
-    padding-top: 5rem;
+    /* text-shadow: 0px 0px 3px #666; */
+    padding-top: 7rem;
     height: 100%;
-    margin-left: 2rem;
+    padding-left: 4rem;
+    width: 100%;
+}
+
+.project-container {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.container-fluid {
+    width: 100%;
+    /* justify-self: center; */
+    /* background-color: #EEE; */
+    /* border-radius: 0.5rem; */
+    border-bottom: 5px solid black;
+}
+
+.container-label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding-left: 5rem;
+    /* background-color: #11538b; */
+    background-color: rgba(202,155,247, 0.6);
+    border-bottom: 3px solid #082844;
+    /* border-left: 5px solid #082844; */
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    /* outline: none; */
+}
+
+.label--right {
+    margin-left: 5rem;
+}
+
+.label--left {
+    margin-right: 5rem;
+}
+
+.project-card {
+    height: 10rem;
+    background-color: blue;
+    border: 5px solid #0f487a;
+    display: flex;
+    align-content: center;
+    padding: 0;
+    /* justify-content: center; */
+    /* margin: 0 5rem; */
+}
+
+.card--left {
+    justify-content: flex-start;
+}
+
+.card--center {
+    justify-content: center;
+}
+
+.card--right {
+    justify-content: flex-end;
+}
+
+.project-contents {
+    width: 90%;
+    height: 100%;
+    background-color: white;
+}
+
+.container-label p {
+    margin-bottom: 0rem;
+    font-size: 30px;
+    letter-spacing: 0.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 3px #082844;
 }
 
 
@@ -78,16 +176,48 @@ body {
         letter-spacing: 0.75rem;
     }
 
+    .english {
+        font-size: 60px;
+    }
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .jumbotron {
+        margin-top: -1rem;
+        height: 7rem;
+    }
+
     .japanese {
         font-size: 40px;
         letter-spacing: 0.50rem;
+        padding-top: 1rem;
     }
 
     .english {
-        font-size: 30px;
-        padding-top: 4rem;
+        font-size: 40px;
+        padding-top: 3.25rem;
+        text-align: center;
+        padding-left: 0rem;
+    }
+
+    .container-label {
+        padding-left: 0rem;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container-label p {
+        text-align: center;
+    }
+
+    .project-card {
+        justify-content: center;
+        padding: 0.5rem 0rem;
     }
 }
