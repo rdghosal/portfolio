@@ -264,10 +264,11 @@ td {
 
 .links__link {
     /* margin: 0 3rem; */
-    color: #97c8fd;
+    /* color: #97c8fd; */
+    color: rgba(214, 236, 255, 0.8);
     padding: 0.5rem 3rem;
     /* width: 33%; */
-    font-weight: 450;
+    font-weight: 490;
     letter-spacing: 0.05rem;
     /* background-color:  rgb(169, 189, 166); */
 }
@@ -321,7 +322,7 @@ td {
 @media only screen and (max-width: 850px) {
 
     .project-container {
-        width: 90vw;
+        width: 100vw;
     }
 
     .japanese {
@@ -331,6 +332,14 @@ td {
 
     .english {
         font-size: 60px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project__card-contents {
+        width: 100%;
     }
 
 }
@@ -346,9 +355,6 @@ td {
         height: 7rem;
     }
 
-    .project-container {
-        width: 100vw;
-    }
 
     .japanese {
         font-size: 40px;
