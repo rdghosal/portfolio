@@ -268,7 +268,7 @@ td {
 }
 
 
-@media only screen and (max-width: 1431px) {
+@media only screen and (max-width: 1500px) {
     .project-container {
         width: 95vw;
     }
@@ -277,8 +277,7 @@ td {
 
 @media only screen and (max-width: 1200px) {
     .project-card {
-        width: 100%;
-        margin: 1rem auto;
+        margin: 1rem 5rem;
     }
 }
 
