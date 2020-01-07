@@ -216,11 +216,11 @@ td {
 
 .project__title {
     padding-top: 0.5rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* font-style: italic; */
     font-size: 22px;
-    font-weight: bolder;
-    letter-spacing: 0.10rem;
+    font-weight: 200;
+    letter-spacing: 0.15rem;
     margin-bottom: 0;
     color: whitesmoke;
     text-shadow: #444 -2px 0px 5px;
