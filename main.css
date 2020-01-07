@@ -270,7 +270,7 @@ td {
 
 @media only screen and (max-width: 1500px) {
     .project-container {
-        width: 90vw;
+        width: 100vw;
     }
 }
 
@@ -333,15 +333,6 @@ td {
         margin-bottom: 0.75rem;
     }
 
-    .card--solo,
-    .card--last {
-        margin-bottom: 1.5rem;
-    }
-
-    .card--last {
-        margin-top: 2.5rem;
-        /* border-top: 10px solid rgba(15, 76, 129, 0); */
-    }
 
     .container-label {
         padding-left: 0rem;
@@ -373,12 +364,13 @@ td {
     }
 
     .project__tech table {
-        font-size: 11px;
-        height: 20vh;
+        font-size: 12px;
+        height: 10vh;
     } 
 
     thead {
-        font-size: 11px;
+        font-size: 12px;
+        vertical-align: middle;
     }
 
     .container-label p {
@@ -394,5 +386,15 @@ td {
     .project-card {
         margin: 1rem auto;
         width: 100%;
+    }
+
+    .card--solo,
+    .card--last {
+        margin-bottom: 3rem;
+    }
+
+    .card--last {
+        margin-top: 1rem;
+        /* border-top: 10px solid rgba(15, 76, 129, 0); */
     }
 }
