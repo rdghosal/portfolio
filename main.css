@@ -107,7 +107,7 @@ body {
     border-bottom: 3px solid rgba(203, 155, 247, 0.301);
     border-left: 5px solid rgba(203, 155, 247, 0.301);
     border-radius: 4px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     /* outline: none; */
 }
 
@@ -130,7 +130,29 @@ body {
     padding: 0;
     /* justify-content: center; */
     /* margin: 0 5rem; */
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.project-card:hover {
+    animation: jingle 350ms ease-out;
+}
+
+@keyframes jingle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    33% {
+        transform: rotateZ(1.5deg);
+    }
+
+    66% {
+        transform: rotateZ(-3deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
 }
 
 .project__card-contents {
@@ -244,7 +266,7 @@ td {
 }
 
 .project__subtitle {
-    border-bottom: 3px solid rgba(15,76,129,0.80);
+    border-bottom: 3px solid rgba(15,76,129,0.60);
     margin-bottom: 0;
     padding: 0.5rem 1rem;
     /* border-left: 5px solid rgba(157, 147, 215, 1.0);  */
@@ -255,7 +277,7 @@ td {
     justify-content: space-around;
     align-items: center;
     height: 3rem;
-    border-top: 3px solid rgba(15,76,129,0.80);
+    border-top: 3px solid rgba(15,76,129,0.60);
     text-align: center;
     width: 100%;
     /* border-left: 5px solid rgba(157, 147, 215, 1.0);  */
@@ -270,6 +292,8 @@ td {
     /* width: 33%; */
     font-weight: 490;
     letter-spacing: 0.05rem;
+    font-size: 18px;
+
     /* background-color:  rgb(169, 189, 166); */
 }
 
@@ -381,6 +405,10 @@ td {
         width: 80%;
     }
 
+    .container-label p {
+        font-size: 22px;
+    }
+
     /* .project-card {
         width: 100%;
     } */
@@ -399,7 +427,7 @@ td {
 
     .links__link {
         padding: 0;
-        font-size: 13px;
+        font-size: 16px;
         width: 33%;
     }
 
