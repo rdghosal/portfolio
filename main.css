@@ -270,7 +270,7 @@ td {
 
 @media only screen and (max-width: 1500px) {
     .project-container {
-        width: 95vw;
+        width: 90vw;
     }
 }
 
@@ -312,9 +312,9 @@ td {
         height: 7rem;
     }
 
-    .project-container {
+    /* .project-container {
         width: 95vw;
-    }
+    } */
 
     .japanese {
         font-size: 40px;
@@ -373,9 +373,12 @@ td {
     }
 
     .project__tech table {
-        width: 100%;
-        font-size: 12px;
-        height: 40%;
+        font-size: 11px;
+        height: 20vh;
+    } 
+
+    thead {
+        font-size: 11px;
     }
 
     .container-label p {
@@ -390,5 +393,6 @@ td {
 
     .project-card {
         margin: 1rem auto;
+        width: 100%;
     }
 }
