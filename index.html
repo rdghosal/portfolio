@@ -13,211 +13,145 @@
 </head>
 <body>
     <div class="main">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="./index.html" class="navbar-brand">Rahul D. Ghosal</a>
-        <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- <div class="spacer"></div> -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./reflections.html" class="nav-link">Reflections</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Jumbotron only for index.html -->
-    <div class="jumbotron jumbotron-fluid">
-        <!-- <h1 class="display-3">Rahul <span id="devs">devs</span></h1> -->
-        <p class="japanese">プロジェクト</p>
-        <!-- <p class="lead">The portfolio site of Rahul D. Ghosal</p> -->
-        <p class="english" id="english">PROJECTS</p>
-    </div>
-    <div class="project-container">
-        <div class="container-label label--right">
-            <p class="label">Web</p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg project-card card--left">
-                    <div class="project__card-contents">
-                        <p class="project__title round-tl">WaveNative</p>
-                        <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
-                        <div class="project__tech">
-                            <table class="table table-dark table-borderless">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <td class="align-middle">Front-End</td>
-                                        <td class="align-middle">Back-End</td>
-                                        <td class="align-middle">Deployment</td>
-                                        <td class="align-middle">Testing</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="align-middle">React.js</td>
-                                        <td class="align-middle">Flask</td>
-                                        <td class="align-middle">Heroku</td>
-                                        <td class="align-middle">Enzyme, Jest,<br> Pytest, Selenium</td>
-                                    </tr>
-                                </tbody> 
-                            </table>
-                        </div>
-                        <div class="project__links">
-                            <a href="" class="links__link">Site</a>
-                            <a href="https://github.com/rdghosal/WaveNative" class="links__link" target="_blank">GitHub</a>
-                            <a href="" class="links__link">Reflections</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg project-card card--right card--last">
-                    <div class="project__card-contents">
-                        <p class="project__title">Type On, Willie!</p>
-                        <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
-                        <div class="project__tech">
-                            <table class="table table-dark table-borderless">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <td class="align-middle">Front-End</td>
-                                        <td class="align-middle">Back-End</td>
-                                        <td class="align-middle">Deployment</td>
-                                        <td class="align-middle">Testing</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="align-middle">React.js</td>
-                                        <td class="align-middle">Express.js</td>
-                                        <td class="align-middle">TBD</td>
-                                        <td class="align-middle">Enzyme, Jest</td>
-                                    </tr>
-                                </tbody> 
-                            </table>
-                        </div>
-                        <div class="project__links">
-                            <a href="" class="links__link">Site</a>
-                            <a href="" class="links__link">GitHub</a>
-                            <a href="" class="links__link">Reflections</a>
-                        </div>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="./index.html" class="navbar-brand">Rahul D. Ghosal</a>
+            <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./reflections.html" class="nav-link">Reflections</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li> -->
+                </ul>
             </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <p class="japanese">プロジェクト</p>
+            <p class="english" id="english">PROJECTS</p>
         </div>
-    </div>
-    <div class="project-container">
-        <div class="container-label label--left">
-            <p class="label">Plugins</p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm project-card card--solo" id="plugins">
-                    <div class="project__card-contents">
-                        <p class="project__title round-tr">searchBar.js</p>
-                        <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
-                        <div class="project__tech">
-                            <table class="table table-dark table-borderless">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <td class="align-middle">Platform</td>
-                                        <td class="align-middle">Language</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="align-middle"><a href="https://www.kintone.com/" class="tech__link" target="_blank">Kintone</a></td>
-                                        <td class="align-middle">JavaScript (ES6)</td>
-                                    </tr>
-                                </tbody> 
-                            </table>
-                        </div>
-                        <div class="project__links">
-                            <!-- <a href="" class="links__link">Site</a> -->
-                            <a href="https://github.com/rdghosal/kintoneScripts/blob/master/searchBar.js" class="links__link" target="_blank">GitHub</a>
-                            <a href="" class="links__link">Reflections</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="project-container">
+            <div class="container-label label--right">
+                <p class="label">Web</p>
             </div>
-        </div>
-    </div>
-    <div class="project-container">
-
-
-        <div class="container-label label--right">
-            <p class="label">Console Apps</p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm project-card card--left">
-                    <div class="project__card-contents">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg project-card card--left">
                         <div class="project__card-contents">
-                            <p class="project__title round-tl">Honyaku.py</p>
+                            <p class="project__title round-tl">WaveNative</p>
                             <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
                             <div class="project__tech">
                                 <table class="table table-dark table-borderless">
                                     <thead class="thead-dark">
                                         <tr>
-                                            <td class="align-middle">Language</td>
+                                            <td class="align-middle">Front-End</td>
+                                            <td class="align-middle">Back-End</td>
+                                            <td class="align-middle">Deployment</td>
                                             <td class="align-middle">Testing</td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="align-middle">Python 3.7</td>
-                                            <td class="align-middle">Pytest</td>
+                                            <td class="align-middle">React.js</td>
+                                            <td class="align-middle">Flask</td>
+                                            <td class="align-middle">Heroku</td>
+                                            <td class="align-middle">Enzyme, Jest,<br> Pytest, Selenium</td>
                                         </tr>
                                     </tbody> 
                                 </table>
                             </div>
                             <div class="project__links">
-                                <!-- <a href="" class="links__link">Site</a> -->
-                                <a href="https://github.com/rdghosal/Honyaku.py" class="links__link" target="_blank">GitHub</a>
+                                <a href="" class="links__link">Site</a>
+                                <a href="https://github.com/rdghosal/WaveNative" class="links__link" target="_blank">GitHub</a>
                                 <a href="" class="links__link">Reflections</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm project-card card--center">
-                    <div class="project__card-contents">
+                    <div class="col-lg project-card card--right card--last">
                         <div class="project__card-contents">
-                            <p class="project__title">Weaver.py</p>
+                            <p class="project__title">Type On, Willie!</p>
                             <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
                             <div class="project__tech">
                                 <table class="table table-dark table-borderless">
                                     <thead class="thead-dark">
                                         <tr>
-                                            <td class="align-middle">Language</td>
+                                            <td class="align-middle">Front-End</td>
+                                            <td class="align-middle">Back-End</td>
+                                            <td class="align-middle">Deployment</td>
                                             <td class="align-middle">Testing</td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="align-middle">Python 3.7</td>
-                                            <td class="align-middle">Pytest</td>
+                                            <td class="align-middle">React.js</td>
+                                            <td class="align-middle">Express.js</td>
+                                            <td class="align-middle">TBD</td>
+                                            <td class="align-middle">Enzyme, Jest</td>
                                         </tr>
                                     </tbody> 
                                 </table>
                             </div>
                             <div class="project__links">
-                                <!-- <a href="" class="links__link">Site</a> -->
-                                <a href="https://github.com/rdghosal/Weaver.py" class="links__link" target="_blank">GitHub</a>
+                                <a href="" class="links__link">Site</a>
+                                <a href="" class="links__link">GitHub</a>
+                                <a href="" class="links__link disabled">Reflections</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="container-label label--left">
+                <p class="label">Plugins</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm project-card card--solo" id="plugins">
+                        <div class="project__card-contents">
+                            <p class="project__title round-tr">searchBar.js</p>
+                            <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                            <div class="project__tech">
+                                <table class="table table-dark table-borderless">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <td class="align-middle">Platform</td>
+                                            <td class="align-middle">Language</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle"><a href="https://www.kintone.com/" class="tech__link" target="_blank">Kintone</a></td>
+                                            <td class="align-middle">JavaScript (ES6)</td>
+                                        </tr>
+                                    </tbody> 
+                                </table>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/rdghosal/kintoneScripts/blob/master/searchBar.js" class="links__link" target="_blank">GitHub</a>
                                 <a href="" class="links__link">Reflections</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm project-card card--right">
-                    <div class="project__card-contents">
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="container-label label--right">
+                <p class="label">Console Apps</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm project-card card--left">
                         <div class="project__card-contents">
                             <div class="project__card-contents">
-                                <p class="project__title">SpyceGen.py</p>
+                                <p class="project__title round-tl">Honyaku.py</p>
                                 <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
                                 <div class="project__tech">
                                     <table class="table table-dark table-borderless">
@@ -236,9 +170,66 @@
                                     </table>
                                 </div>
                                 <div class="project__links">
-                                    <!-- <a href="" class="links__link">Site</a> -->
-                                    <a href="https://github.com/rdghosal/SpyceGen.py" class="links__link" target="_blank">GitHub</a>
+                                    <a href="https://github.com/rdghosal/Honyaku.py" class="links__link" target="_blank">GitHub</a>
                                     <a href="" class="links__link">Reflections</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm project-card card--center">
+                        <div class="project__card-contents">
+                            <div class="project__card-contents">
+                                <p class="project__title">Weaver.py</p>
+                                <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                                <div class="project__tech">
+                                    <table class="table table-dark table-borderless">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <td class="align-middle">Language</td>
+                                                <td class="align-middle">Testing</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-middle">Python 3.7</td>
+                                                <td class="align-middle">Pytest</td>
+                                            </tr>
+                                        </tbody> 
+                                    </table>
+                                </div>
+                                <div class="project__links">
+                                    <a href="https://github.com/rdghosal/Weaver.py" class="links__link" target="_blank">GitHub</a>
+                                    <a href="" class="links__link">Reflections</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm project-card card--right">
+                        <div class="project__card-contents">
+                            <div class="project__card-contents">
+                                <div class="project__card-contents">
+                                    <p class="project__title">SpyceGen.py</p>
+                                    <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                                    <div class="project__tech">
+                                        <table class="table table-dark table-borderless">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <td class="align-middle">Language</td>
+                                                    <td class="align-middle">Testing</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-middle">Python 3.7</td>
+                                                    <td class="align-middle">Pytest</td>
+                                                </tr>
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/rdghosal/SpyceGen.py" class="links__link" target="_blank">GitHub</a>
+                                        <a href="" class="links__link disabled">Reflections</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -246,34 +237,42 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <p class="copyright">Site design and contents by<br><span class="footer__name">Rahul D. Ghosal</span></p>
+            <div class="footer__links">
+                <a href="https://www.linkedin.com/in/rahul-d-ghosal/" class="linkedin">GitHub</a> |
+                <a href="https://github.com/rdghosal" class="github">LinkedIn</a> |
+                <a href="mailto:rdghosal@gmail.com" class="email">E-mail</a>
+            </div>
+        </footer>
     </div>
-    <footer class="footer">
-        <p class="copyright">Site design and contents by<br><span class="footer__name">Rahul D. Ghosal</span></p>
-        <div class="footer__links">
-            <a href="https://www.linkedin.com/in/rahul-d-ghosal/" class="linkedin">GitHub</a> |
-            <a href="https://github.com/rdghosal" class="github">LinkedIn</a> |
-            <a href="mailto:rdghosal@gmail.com" class="email">E-mail</a>
-        </div>
-    </footer>
-</div>
     <script>
-        // (function() {
-        //     const projCards = document.getElementsByClassName("project-card");
-        //     for (let i = 0; i < projCards.length; i++) {
-        //         projCards[i].addEventListener("mouseenter", () => {
-        //             console.log("hello")
-        //             let projContents = projCards[i].firstElementChild.children;
-        //             console.log(projContents)
-        //             for (let j = 0; j < projContents.length; j++) {
-        //                 if (projContents[j].className === "project__links") {
-        //                     console.log("hello again")
-        //                     projContents[j].classList.add("project__links--hover");
-        //                     // projContents[j].style.color = "coral";
-        //                 }
-        //             }
-        //         })
-        //     }
-        // })();
+        (function() {
+            const projLinks = document.getElementsByClassName("project__links");
+            for (let i = 0; i < projLinks.length; i++) {
+                for (let j = 0; j < projLinks[i].children.length; j++) {
+                    projLinks[i].children[j].addEventListener("mouseover", () => {
+                        let originalText = "";
+                        let originalFontSize = "";
+                        if (projLinks[i].children[j].classList.contains("disabled")) {
+                            originalText = projLinks[i].children[j].innerHTML;
+                            originalFontSize = window.getComputedStyle(projLinks[i].children[j]).getPropertyValue("font-size");
+                            projLinks[i].children[j].innerHTML = "Under construction!"
+                            projLinks[i].children[j].style.fontSize = (originalFontSize === "16px") ? "15px" : "17px";
+                            // projLinks[i].children[j].disabled = true;
+                            projLinks[i].children[j].addEventListener("mouseleave", () => {
+                                projLinks[i].children[j].innerHTML = originalText;
+                                projLinks[i].children[j].style.fontSize = originalFontSize;
+                            });
+                        }
+                    });
+                }
+            }
+        })();
+        
+        function underConstructionMessage(e) {
+            e.target.innerHTML
+        }
     </script>
 </body>
 </html>

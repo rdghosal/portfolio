@@ -102,7 +102,7 @@ body {
 .project-container {
     width: 70vw;
     margin: 0 auto;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .container-fluid {
@@ -315,6 +315,7 @@ td {
     /* background-color:  rgb(169, 189, 166); */
 }
 
+
 .links__link:hover,
 .links__links:focus {
     animation: illuminate-2 500ms ease-out forwards;
@@ -337,6 +338,53 @@ td {
     color: coral;
     text-decoration: none;
 }
+
+
+.disabled:hover {
+    color: rgba(214, 236, 255, 0.8);
+    animation: none;
+}
+
+/* .disabled {
+    position: relative;
+    color: rgba(214, 236, 255, 0.8);
+     pointer-events: none; 
+}
+
+.disabled:after {
+    content: "Under construction!";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    color: white;
+    width: 100%;
+    height: 18px;
+    background-color: rgba(15,76,129,0.4);
+    border: 1px solid rgba(15,76,129,0.8); 
+    position: absolute;
+    display: none;
+    padding: 0.25rem;
+    padding-top: 0;
+    border-radius: 0.25rem;
+    top: 0.25rem;
+    box-shadow: rgba(15,76,129,0.8) -2px 0px 6px 1px;
+}
+
+.disabled:hover::after {
+    display: inline;
+    animation: expand 300ms ease-in-out;
+    
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}  */
+
 
 .container-label p {
     margin-bottom: 0rem;
