@@ -701,13 +701,18 @@ td {
     }
 
     .footer {
-        font-weight: 550;
+        font-weight: 500;
         padding: 1rem;
+    }
+
+    .footer__name {
+        letter-spacing: 0.05rem;
+        font-size: 18px;
     }
 
     .footer__links div,
     .footer__links a {
-        font-weight: 550;
+        font-weight: 500;
         font-size: 16px;
     }
 
