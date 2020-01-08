@@ -336,13 +336,12 @@ td {
     display: flex;
     height: 10rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1rem 0rem;
     font-weight: 150;
     color: #111;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
+    padding: 2rem 2rem;
     bottom: 0;
 }
 
@@ -364,6 +363,10 @@ td {
 
 .footer__name {
     font-weight: 750;
+}
+
+.copyright {
+    text-align: center;
 }
 
 .footer__links a:hover,
@@ -684,7 +687,6 @@ td {
     }
 
     .reflections__post {
-        padding: 2rem 1.5rem;
         width: 95vw;
         margin: 0 auto;
         margin-bottom: 2rem;
@@ -698,9 +700,16 @@ td {
         font-size: 18px;
     }
 
-    .footer__links {
-        font-weight: 500;
+    .footer {
+        font-weight: 550;
+        padding: 1rem;
+    }
+
+    .footer__links div,
+    .footer__links a {
+        font-weight: 550;
         font-size: 16px;
     }
+
 
 }
