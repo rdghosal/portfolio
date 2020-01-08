@@ -248,30 +248,33 @@
     </div>
     <script>
         (function() {
-            const projLinks = document.getElementsByClassName("project__links");
+            const projLinks = document.getElementsByClassName("links__link");
             for (let i = 0; i < projLinks.length; i++) {
-                for (let j = 0; j < projLinks[i].children.length; j++) {
-                    projLinks[i].children[j].addEventListener("mouseover", () => {
-                        let originalText = "";
-                        let originalFontSize = "";
-                        if (projLinks[i].children[j].classList.contains("disabled")) {
-                            originalText = projLinks[i].children[j].innerHTML;
-                            originalFontSize = window.getComputedStyle(projLinks[i].children[j]).getPropertyValue("font-size");
-                            projLinks[i].children[j].innerHTML = "Under construction!"
-                            projLinks[i].children[j].style.fontSize = (originalFontSize === "16px") ? "15px" : "17px";
-                            // projLinks[i].children[j].disabled = true;
-                            projLinks[i].children[j].addEventListener("mouseleave", () => {
-                                projLinks[i].children[j].innerHTML = originalText;
-                                projLinks[i].children[j].style.fontSize = originalFontSize;
-                            });
-                        }
-                    });
-                }
+                let origText, origFontSize = "";
+                projLinks[i].addEventListener("mouseenter", underConstructionMessage);
             }
         })();
         
         function underConstructionMessage(e) {
-            e.target.innerHTML
+            let origWinWidth = window.innerWidth;
+            let origText = e.target.innerHTML;
+            let origFontSize = window.getComputedStyle(e.target).getPropertyValue("font-size");
+            if (e.target.classList.contains("disabled")) {
+                e.target.innerHTML = "Under construction!";
+                e.target.style.fontSize = (origFontSize === "16px") ? "15px" : "17px";
+                e.target.onmouseleave = () => {
+                    e.target.innerHTML = origText;
+                    e.target.style.fontSize = origFontSize;
+                }
+
+                window.onresize = () => {
+                    if (origWinWidth < 575 && window.innerWidth > 575) {
+                        e.target.style.fontSize = "20px";
+                    } else if (origWinWidth > 575 && window.innerWidth < 575) {
+                        e.target.style.fontSize = "16px";
+                    }
+                }
+            }
         }
     </script>
 </body>
