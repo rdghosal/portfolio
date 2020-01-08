@@ -675,6 +675,10 @@ td {
         margin: 0 auto;
     }
 
+    .contact-container h2 {
+        font-size: 22px;
+    }
+
     /* .reflections-container {
         width: 100vw;
     } */
