@@ -300,13 +300,25 @@ td {
     /* margin: 0 3rem; */
     /* color: #97c8fd; */
     color: rgba(214, 236, 255, 0.8);
-    padding: 0.5rem 3rem;
+    padding: 1rem 3rem;
     /* width: 33%; */
     font-weight: 525;
     letter-spacing: 0.075rem;
     font-size: 20px;
-
+    width: 100%;
     /* background-color:  rgb(169, 189, 166); */
+}
+
+.links__link:hover {
+    animation: illuminate-2 500ms ease-out forwards;
+    border-radius: 0.25rem;
+}
+
+@keyframes illuminate-2 {
+    100% {
+        background-color: rgba(202,155,247, 0.40);
+        border: 2px solid rgba(202,155,247, 0.40);
+    }
 }
 
 .project__links--hover {
