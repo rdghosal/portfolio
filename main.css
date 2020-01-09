@@ -334,7 +334,7 @@ tbody {
 }
 
 .footer__name {
-    font-weight: 750;
+    font-weight: 600;
 }
 
 .copyright {
@@ -689,6 +689,11 @@ hr {
         font-size: 60px;
     }
 
+    .contact-container, .contact.container-fluid,
+    .contact-contents__text {
+        width: 100vw;
+        align-items: center;
+    }
 
     .reflections-container h1 {
         font-size: 40px;
@@ -697,6 +702,8 @@ hr {
     .reflections__post {
         padding: 2rem 4rem;
     }
+
+
 
 }
 
@@ -714,7 +721,7 @@ hr {
     .jumbotron {
         margin-top: -1rem;
         height: 7rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
 
@@ -758,7 +765,8 @@ hr {
         padding-left: 0rem;
         margin: 0 auto;
         margin-bottom: 0.25rem;
-        width: 80%;
+        width: 100%;
+        border-radius: 0;
     }
 
     .container-label p {
@@ -771,6 +779,7 @@ hr {
 
     .project__subtitle {
         border-bottom: none;
+        font-size: 16px;
     }
 
     .project__links {
@@ -780,6 +789,10 @@ hr {
     .links__link {
         padding: 1rem 1rem;
         font-size: 16px;
+    }
+
+    #willie__links {
+        display: none;
     }
 
     .project__tech table {
@@ -815,30 +828,28 @@ hr {
         margin-top: 1rem;
     }
 
+    .disabled {
+        display:none;
+    }
+
     .contact-container {
         margin-bottom: 2rem;
     }
 
     .contact-container h1 {
-        font-size: 50px;
+        font-size: 32px;
     }
 
     .contact-info {
         display: none;
     }
 
-    .contact-container, .contact.container-fluid,
     .contact-contents__text {
-        width: 100vw;
-        align-items: center;
-    }
-
-    .contact-contents__text {
-        padding: 1rem 1.5rem;
+        padding: 1rem 0.02rem;
     }
 
     .contact-contents__text p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .contact-contents__text button {
@@ -873,6 +884,10 @@ hr {
         padding: 1rem;
     }
 
+    .copyright {
+        font-size: 16px;
+    }
+
     .footer__name {
         letter-spacing: 0.05rem;
         font-size: 18px;
@@ -893,11 +908,11 @@ hr {
     }
 
     .contact-contents__text p {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .contact-container h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .contact-contents__text button {

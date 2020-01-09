@@ -4,7 +4,6 @@
     for (let i = 0; i < projLinks.length; i++) {
         let origText, origFontSize = "";
         projLinks[i].addEventListener("mouseenter", underConstructionMessage);
-        projLinks[i].addEventListener("click", () => e.preventDefault());
     }
 })();
 
@@ -16,11 +15,11 @@ function underConstructionMessage(e) {
         e.target.style.cursor = "default";
         e.target.innerHTML = "Under construction!";
         e.target.style.fontSize = (origFontSize === "16px") ? "15px" : "17px";
+        e.target.onclick = () => e.preventDefault();
         e.target.onmouseleave = () => {
             e.target.innerHTML = origText;
             e.target.style.fontSize = origFontSize;
         }
-
         window.onresize = () => {
             if (origWinWidth < 575 && window.innerWidth > 575) {
                 e.target.style.fontSize = "20px";
