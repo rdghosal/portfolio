@@ -94,7 +94,7 @@ body {
 }
 
 .project-container {
-    width: 70vw;
+    width: 75vw;
     margin: 0 auto;
     margin-bottom: 4rem;
 }
@@ -123,15 +123,17 @@ body {
 }
 
 .project-card {
-    max-height: 20rem;
+    max-height: 22rem;
     width: 90%;
     display: flex;
     margin-bottom: 3rem;
     padding-left: 0;
     padding-right: 0;
+    /* padding: 0.25rem 0; */
 }
 
 .project__card-contents {
+    height: 100%;
     width: 100%;
     background-color: rgba(15,76,129,0.05);
     display: flex;
@@ -231,6 +233,10 @@ tbody {
     border-bottom: 3px solid rgba(15,76,129,0.60);
     margin-bottom: 0;
     padding: 0.5rem 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #333;
 }
 
 .project__links {
@@ -242,6 +248,7 @@ tbody {
     text-align: center;
     width: 100%;
     padding: 2rem 0;
+    /* height: 100%; */
 }
 
 
@@ -251,8 +258,9 @@ tbody {
     font-weight: 525;
     letter-spacing: 0.075rem;
     font-size: 20px;
+    /* height: 4rem; */
     width: 100%;
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
 }
 
 
@@ -262,12 +270,12 @@ tbody {
     border-radius: 0.25rem;
 }
 
-@keyframes illuminate-2 {
+/* @keyframes illuminate-2 {
     100% {
         background-color: rgba(202,155,247, 0.40);
         border: 2px solid rgba(202,155,247, 0.40);
     }
-}
+} */
 
 .project__links--hover {
     color: coral;
@@ -276,13 +284,14 @@ tbody {
 .links__link:hover,
 .links__link:focus {
     color: coral;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 
 .disabled:hover {
     color: rgba(214, 236, 255, 0.8);
     animation: none;
+    text-decoration: none;
 }
 
 .container-label p {
@@ -352,7 +361,7 @@ tbody {
 .contact-contents {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 /* .contact-contents img {
@@ -374,6 +383,7 @@ hr {
 
 .contact-info {
     font-size: 25px;
+    /* width: 70%; */
 }
 
 .contact__title {
@@ -422,6 +432,10 @@ hr {
 .contact__list-container {
     display: flex;
     margin-bottom: 1rem;
+    background-color: rgba(15,76,129,0.3);
+    padding: 1rem;
+    border-top: 2px solid white;
+    border-radius: 0.75rem 0.75rem 0.50rem 0.50rem;
 }
 
 .contact__list-container ul {
@@ -446,7 +460,7 @@ hr {
     padding: 3rem;
     padding-top: 0rem;
     font-size: 20px;
-    width: 100%;
+    width: 70%;
 }
 
 .contact-container {
@@ -469,6 +483,12 @@ hr {
     font-size: 26px;
     margin-bottom: 1rem;
     font-style: italic;
+}
+
+
+.resume-container a {
+    width: 100%;
+    text-align: center;
 }
 
 .resume-container button {
@@ -557,15 +577,39 @@ hr {
     font-weight: 250;
     font-style: italic;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .reflections__post a {
     color: #555;
     font-size: 18px;
-    font-weight: 450;
+    font-weight: 550 !important;
     margin-top: 1rem;
 }
 
+.post__link-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.post__link {
+    margin: 0 3rem;
+}
+
+.post__text-link {
+    color: #555;
+    font-size: 18px;
+    font-weight: 600 !important;
+    text-decoration: underline;
+}
+
+.post__text ul {
+    padding-left: 2rem;
+}
+
+.post__text-link:hover,
+.post__text-link:focus,
 .reflections__post a:hover,
 .reflections__post a:focus {
     color: coral;
@@ -615,6 +659,13 @@ hr {
         width: 100%;
     }
 
+    .reflections__post {
+        width: 85vw;
+    }
+
+    .contact__list-header {
+        font-size: 30px;
+    }
 }
 
 
@@ -623,10 +674,6 @@ hr {
     .japanese {
         letter-spacing: 3rem;
         font-size: 70px;
-    }
-
-    .contact__list-header {
-        font-size: 30px;
     }
 }
 
@@ -766,12 +813,6 @@ hr {
 
     .card--last {
         margin-top: 1rem;
-    }
-
-    .contact-contents img {
-        max-height: 400px;
-        max-width: 300px;
-        margin: 0 auto;
     }
 
     .contact-container {

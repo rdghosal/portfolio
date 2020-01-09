@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="main">
+    <script src="app.js"></script>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a href="./index.html" class="navbar-brand">Rahul D. Ghosal</a>
             <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +46,7 @@
                     <div class="col-lg project-card card--left">
                         <div class="project__card-contents">
                             <p class="project__title round-tl">WaveNative</p>
-                            <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                            <p class="project__subtitle">Sound visualization SPA for ESL learners to query third-party database for native recordings of English words and record their own pronunciation of these words</p>
                             <div class="project__tech">
                                 <table class="table table-dark table-borderless">
                                     <thead class="thead-dark">
@@ -76,7 +77,7 @@
                     <div class="col-lg project-card card--right card--last">
                         <div class="project__card-contents">
                             <p class="project__title">Type On, Willie!</p>
-                            <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                            <p class="project__subtitle">SPA that times and tests user's typing accuracy. Progress is recorded and compared to users of similar academic/professional background<br><br></p>
                             <div class="project__tech">
                                 <table class="table table-dark table-borderless">
                                     <thead class="thead-dark">
@@ -116,7 +117,7 @@
                     <div class="col-sm project-card card--solo" id="plugins">
                         <div class="project__card-contents">
                             <p class="project__title round-tr">searchBar.js</p>
-                            <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                            <p class="project__subtitle">A Kintone plugin that renders and additional searchbar with with approximate string matching functionality</p>
                             <div class="project__tech">
                                 <table class="table table-dark table-borderless">
                                     <thead class="thead-dark">
@@ -135,7 +136,7 @@
                             </div>
                             <div class="project__links">
                                 <a href="https://github.com/rdghosal/kintoneScripts/blob/master/searchBar.js" class="links__link" target="_blank">GitHub</a>
-                                <a href="" class="links__link">Reflections</a>
+                                <a href="./reflections.html#searchBar" class="links__link">Reflections</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +153,7 @@
                         <div class="project__card-contents">
                             <div class="project__card-contents">
                                 <p class="project__title round-tl">Honyaku.py</p>
-                                <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                                <p class="project__subtitle">Web scraper that implements a queue to extract text each page of a website and check English spelling accuracy</p>
                                 <div class="project__tech">
                                     <table class="table table-dark table-borderless">
                                         <thead class="thead-dark">
@@ -171,7 +172,7 @@
                                 </div>
                                 <div class="project__links">
                                     <a href="https://github.com/rdghosal/Honyaku.py" class="links__link" target="_blank">GitHub</a>
-                                    <a href="" class="links__link">Reflections</a>
+                                    <a href="" class="links__link disabled">Reflections</a>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +181,7 @@
                         <div class="project__card-contents">
                             <div class="project__card-contents">
                                 <p class="project__title">Weaver.py</p>
-                                <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                                <p class="project__subtitle">Automates the generation of specific reports made in PowerPoint and permutations thereof<br><br></p>
                                 <div class="project__tech">
                                     <table class="table table-dark table-borderless">
                                         <thead class="thead-dark">
@@ -199,7 +200,7 @@
                                 </div>
                                 <div class="project__links">
                                     <a href="https://github.com/rdghosal/Weaver.py" class="links__link" target="_blank">GitHub</a>
-                                    <a href="" class="links__link">Reflections</a>
+                                    <a href="./reflections.html#Weaver" class="links__link">Reflections</a>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +210,7 @@
                             <div class="project__card-contents">
                                 <div class="project__card-contents">
                                     <p class="project__title">SpyceGen.py</p>
-                                    <p class="project__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, magni!</p>
+                                    <p class="project__subtitle">Automates scripts used in Synposys® HSPICE® printed circuit board (PCB) signal and power integrity simulations</p>
                                     <div class="project__tech">
                                         <table class="table table-dark table-borderless">
                                             <thead class="thead-dark">
@@ -228,7 +229,7 @@
                                     </div>
                                     <div class="project__links">
                                         <a href="https://github.com/rdghosal/SpyceGen.py" class="links__link" target="_blank">GitHub</a>
-                                        <a href="" class="links__link">Reflections</a>
+                                        <a href="./reflections.html#SpyceGen" class="links__link">Reflections</a>
                                     </div>
                                 </div>
                             </div>
@@ -246,38 +247,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        (function() {
-            const projLinks = document.getElementsByClassName("links__link");
-            for (let i = 0; i < projLinks.length; i++) {
-                let origText, origFontSize = "";
-                projLinks[i].addEventListener("mouseenter", underConstructionMessage);
-                projLinks[i].addEventListener("click", () => e.preventDefault());
-            }
-        })();
-        
-        function underConstructionMessage(e) {
-            let origWinWidth = window.innerWidth;
-            let origText = e.target.innerHTML;
-            let origFontSize = window.getComputedStyle(e.target).getPropertyValue("font-size");
-            if (e.target.classList.contains("disabled")) {
-                e.target.style.cursor = "default";
-                e.target.innerHTML = "Under construction!";
-                e.target.style.fontSize = (origFontSize === "16px") ? "15px" : "17px";
-                e.target.onmouseleave = () => {
-                    e.target.innerHTML = origText;
-                    e.target.style.fontSize = origFontSize;
-                }
-
-                window.onresize = () => {
-                    if (origWinWidth < 575 && window.innerWidth > 575) {
-                        e.target.style.fontSize = "20px";
-                    } else if (origWinWidth > 575 && window.innerWidth < 575) {
-                        e.target.style.fontSize = "16px";
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

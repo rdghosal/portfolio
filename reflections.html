@@ -37,25 +37,136 @@
             <p class="english" id="english">REFLECTIONS</p>
         </div>
         <div class="reflections-container">
-            <h1 class="tagline">Lessons on design</h1>
+            <h1 class="tagline">Insights on design</h1>
             <div class="reflections__post-container">
-                    <article class="reflections__post">
-                        <h2 class="post__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <h3 class="post__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident id rem doloremque esse quaerat?</h3>
-                        <p class="post__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, officia! Voluptatum sint sed ipsum inventore assumenda, maxime enim aperiam dignissimos corrupti doloremque iusto suscipit vitae id veniam quas asperiores, harum, ipsa eligendi itaque ex reprehenderit porro praesentium. Nemo placeat, aliquid doloribus quisquam delectus maiores pariatur non sunt natus recusandae accusamus.</p>
-                        <a href="./index.html" class="return-link">Back to Projects</a>
+                    <article class="reflections__post" id="searchBar">
+                        <h2 class="post__title">searchBar.js</h2>
+                        <h3 class="post__subtitle">A Kintone plugin for approximate string matching</h3>
+                        <div class="post__text">
+                            <h4 class="post__header">Context</h4>
+                            <ul>
+                                <li>A database application with over 700 records on <a href="https://www.kintone.com/" target="_blank" class="post__text-link">Kintone</a>, an online cloud platform</li>
+                            </ul>
+                            <h4 class="post__header">Problem</h4>
+                            <ul>
+                                <li>Strings of Latin characters require the entire string as a query, making querying inefficient and inconvenient</li>
+                                <li>Neglecting this issue could lead to disuse and abandonment of the platform—a potential loss of over $2000 in licensing costs A database application with over 700 records on Kintone, an online cloud platform</li>
+                            </ul>
+                            <h4 class="post__header">Specifications</h4>
+                            <ul>
+                                <li>Allows impartial string queries to match intended targets</li>
+                                <li>At least as fast and convenient as built-in search features to merit adoption</li>
+                                <li>Distinguishes between string and number (JavaScript) data types to allow “fuzzy” matching for string queries and ensure precision for numerical queries</li>
+                                <li>Queries all records, despite pagination in application view</li>
+                                <li>Outputs search results such that matched records have only relevant information displayed while being aesthetically pleasing Queries all records, despite pagination in application view</li>
+                            </ul>
+                            <h4 class="post__header">Technologies</h4>
+                            <ul>
+                                <li>JavaScript ES6</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <h4 class="post__header">Architecture and algorithm design</h4>
+                            <ul>
+                                <li>Use native JavaScript methods for string matching to meet specifications and time constraints, while avoiding overhead in design and testing for more precise fuzzing matching algorithms that use, for example, <a href="https://en.wikipedia.org/wiki/Edit_distance" target="_blank" class="post__text-link">edit distance</a></li>
+                                <li>Implement conditional logic that branches to different iterations of the designed filtering algorithm according to whether the data is of type string, number, or object (in case of a nested-table) </li>
+                                <li>Fetch all records prior to execution of the filtering algorithm through an asynchronous HTTP request to the Kintone API in order to optimize execution time</li>
+                                <li>Output results as a separate tab to which the browser automatically navigates to and styling such using Bootstrap</li>
+                            </ul>
+                            <h4 class="post__header">Testing</h4>
+                            <ul>
+                                <li>Manual testing using Google Chrome v79</li>
+                                <li>While record loading is susceptible to latency, the filtering algorithm meets specifications while appearing to be no slower than built-in search features</li>
+                            </ul>
+                        </div>
+                        <div class="post__link-container">
+                            <a href="./index.html" class="post__link">Back to Projects</a>
+                            <a href="https://github.com/rdghosal/kintoneScripts/blob/master/searchBar.js" target="_blank" class="post__link">See Source Code</a>
+                        </div>
                     </article>
-                    <article class="reflections__post">
-                        <h2 class="post__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <h3 class="post__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident id rem doloremque esse quaerat?</h3>
-                        <p class="post__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, officia! Voluptatum sint sed ipsum inventore assumenda, maxime enim aperiam dignissimos corrupti doloremque iusto suscipit vitae id veniam quas asperiores, harum, ipsa eligendi itaque ex reprehenderit porro praesentium. Nemo placeat, aliquid doloribus quisquam delectus maiores pariatur non sunt natus recusandae accusamus.</p>
-                        <a href="./index.html" class="return-link">Back to Projects</a>
+                    <article class="reflections__post" id="SpyceGen">
+                        <h2 class="post__title">SpyceGen.py</h2>
+                        <h3 class="post__subtitle">A console application to automate scripts used in HSPICE® printed circuit board (PCB) signal and power integrity simulations</h3>
+                        <div class="post__text">
+                            <h4 class="post__header">Context</h4>
+                            <ul>
+                                <li>PCB simulations achieved by several desktop applications, one of which is <a href="https://www.synopsys.com/verification/ams-verification/hspice.html" target="_blank" class="post__text-link">Synopsys® HSPICE®</a></li>
+                            </ul>
+                            <h4 class="post__header">Problem</h4>
+                            <ul>
+                                <li>Automating the generation of execution scripts for HSPICE®</li>
+                            </ul>
+                            <h4 class="post__header">Specifications</h4>
+                            <ul>
+                                <li>Replaces the manual and error-prone method of copy-pasting boilerplate code and string data found in files external to the script file</li>
+                                <li>Generates a script file and permutations thereof to satisfy simulation requirements (e.g., a fast, slow, and typical case per interface signal)</li>
+                            </ul>
+                            <h4 class="post__header">Technologies</h4>
+                            <ul>
+                                <li>Python 3.7 standard library</li>
+                                <li>Pytest</li>
+                            </ul>
+                            <h4 class="post__header">Architecture and algorithm design</h4>
+                            <ul>
+                                <li>Assume a pre-determined directory structure used to navigate and extract data</li>
+                                <li>Reference a template file containing boilerplate code</li>
+                                <li>Use regular expressions to parse folder/file names and in-file string data</li>
+                                <li>Represent sections of the script file as objects with behavior to mutate string data according to patterns within those sections</li>
+                                <li>Implement hash tables (Python dictionaries) to store data in heap memory for objects to efficiently access at runtime</li>
+                            </ul>
+                            <h4 class="post__header">Testing</h4>
+                            <ul>
+                                <li>Unit testing using Pytest</li>
+                                <li>Testing parameters reflect a particular use case, thus limiting the application’s usability</li>
+                            </ul>
+                        </div>
+                        <div class="post__link-container">
+                            <a href="./index.html" class="post__link">Back to Projects</a>
+                            <a href="https://github.com/rdghosal/SpyceGen.py" class="post__link" target="_blank">See Source Code</a>
+                        </div>
                     </article>
-                    <article class="reflections__post">
-                        <h2 class="post__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <h3 class="post__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident id rem doloremque esse quaerat?</h3>
-                        <p class="post__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, officia! Voluptatum sint sed ipsum inventore assumenda, maxime enim aperiam dignissimos corrupti doloremque iusto suscipit vitae id veniam quas asperiores, harum, ipsa eligendi itaque ex reprehenderit porro praesentium. Nemo placeat, aliquid doloribus quisquam delectus maiores pariatur non sunt natus recusandae accusamus.</p>
-                        <a href="./index.html" class="return-link">Back to Projects</a>
+                    <article class="reflections__post" id="Weaver">
+                        <h2 class="post__title">Weaver.py</h2>
+                        <h3 class="post__subtitle">A console application to automate the generation of reports made in PowerPoint</h3>
+                        <div class="post__text">
+                            <h4 class="post__header">Context</h4>
+                            <ul>
+                                <li>A reporting service provided to clients wherein reports are generated in PowerPoint</li>
+                            </ul>
+                            <h4 class="post__header">Problem</h4>
+                            <ul>
+                                <li>Automating the generation of PowerPoint reports of varying type</li>
+                            </ul>
+                            <h4 class="post__header">Specifications</h4>
+                            <ul>
+                                <li>Generates a PowerPoint file with data consistent with that of an initial report delivered to clients that confirm service conditions (hereafter, “confirmation report”)</li>
+                                <li>Does not alter any referenced files (e.g., confirmation report)</li>
+                                <li>Generates a file and permutations thereof according to the report’s type </li>
+                            </ul>
+                            <h4 class="post__header">Technologies</h4>
+                            <ul>
+                                <li>Python 3.7 standard library</li>
+                                <li><a href="https://github.com/mhammond/pywin32" class="post__text-link" target="_blank">pywin32</a></li>
+                                <li>Pytest</li>
+                            </ul>
+                            <h4 class="post__header">Architecture and algorithm design</h4>
+                            <ul>
+                                <li>Utilize pywin32 over <a href="https://ironpython.net/" target="_blank" class="post__text-link">IronPython</a>, <a href="http://pythonnet.github.io/" target="_blank" class="post__text-link">Python for .NET</a>, and <a href="https://python-pptx.readthedocs.io/en/latest/" target="_blank" class="post__text-link">python-pptx</a> to interface PowerPoint through the Microsoft <a class="post__text-link" href="https://docs.microsoft.com/en-us/office/vba/api/overview/powerpoint/object-model" target="_blank">Component Object Model (COM)</a>, lending the application to faster development and greater usability, maintainability and reliability</li>
+                                <li>Reference a template file for each report type containing patterns in file structure and content</li>
+                                <li>Represent each report type as an object with specific behavior, which ensures data writing according to file structure, achieved through polymorphism</li>
+                                <li>Represent confirmation tools as an object with data reading behavior to prevent changes to file</li>
+                                <li>Implement algorithms to query Slide objects for specific shapes, such as Tables and TextFrames consistently</li>
+                                <li>Modularize objects and constant variable definitions to ensure usability in future applications</li>
+                            </ul>
+                            <h4 class="post__header">Testing</h4>
+                            <ul>
+                                <li>Parametrized unit testing using Pytest</li>
+                                <li>End-to-end testing using reports of all types from an actual use case</li>
+                            </ul>
+                        </div>
+                        <div class="post__link-container">
+                            <a href="./index.html" class="post__link">Back to Projects</a>
+                            <a href="https://github.com/rdghosal/Weaver.py" class="post__link" target="_blank">See Source Code</a>
+                        </div>
                     </article>
             </div>
         </div>
