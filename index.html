@@ -67,9 +67,9 @@
                                 </table>
                             </div>
                             <div class="project__links">
-                                <a href="" class="links__link">Site</a>
+                                <a href="" class="links__link disabled">Site</a>
                                 <a href="https://github.com/rdghosal/WaveNative" class="links__link" target="_blank">GitHub</a>
-                                <a href="" class="links__link">Reflections</a>
+                                <a href="" class="links__link disabled">Reflections</a>
                             </div>
                         </div>
                     </div>
@@ -98,8 +98,8 @@
                                 </table>
                             </div>
                             <div class="project__links">
-                                <a href="" class="links__link">Site</a>
-                                <a href="" class="links__link">GitHub</a>
+                                <a href="" class="links__link disabled">Site</a>
+                                <a href="" class="links__link disabled">GitHub</a>
                                 <a href="" class="links__link disabled">Reflections</a>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                                     </div>
                                     <div class="project__links">
                                         <a href="https://github.com/rdghosal/SpyceGen.py" class="links__link" target="_blank">GitHub</a>
-                                        <a href="" class="links__link disabled">Reflections</a>
+                                        <a href="" class="links__link">Reflections</a>
                                     </div>
                                 </div>
                             </div>
@@ -252,6 +252,7 @@
             for (let i = 0; i < projLinks.length; i++) {
                 let origText, origFontSize = "";
                 projLinks[i].addEventListener("mouseenter", underConstructionMessage);
+                projLinks[i].addEventListener("click", () => e.preventDefault());
             }
         })();
         
@@ -260,6 +261,7 @@
             let origText = e.target.innerHTML;
             let origFontSize = window.getComputedStyle(e.target).getPropertyValue("font-size");
             if (e.target.classList.contains("disabled")) {
+                e.target.style.cursor = "default";
                 e.target.innerHTML = "Under construction!";
                 e.target.style.fontSize = (origFontSize === "16px") ? "15px" : "17px";
                 e.target.onmouseleave = () => {
