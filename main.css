@@ -777,9 +777,16 @@ hr {
         width: 100%;
     }
 
+    .project__title {
+        margin-bottom: 0rem;
+    }
+
     .project__subtitle {
         border-bottom: none;
-        font-size: 16px;
+        margin-top: 0rem;
+        padding-top: 0.05rem;
+        font-size: 18px;
+        font-weight: 400;
     }
 
     .project__links {
@@ -797,7 +804,7 @@ hr {
 
     .project__tech table {
         font-size: 12px;
-        height: 10vh;
+        /* height: 10vh; */
         font-size: 10px;
         width: 100vw;
     } 
