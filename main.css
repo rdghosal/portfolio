@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-color: rgba(15,76,129,0.70);
+    background-color: rgba(15,76,129,0.65);
     overflow-x: hidden;
     position: relative;
 }
@@ -30,7 +30,7 @@ body {
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: coral !important;
-    opacity: 0.75;
+    opacity: 0.9;
 }
 
 .nav-link {
@@ -553,7 +553,7 @@ hr {
     width: 60vw;
     margin: 0 auto;
     margin-bottom: 5rem;
-    background-color: rgb(252, 239, 223);
+    background-color: rgba(252, 239, 223, 0.80);
     display: flex;
     justify-content: center;
     align-items: center;
