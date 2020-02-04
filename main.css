@@ -145,13 +145,14 @@ body {
 }
 
 .project__card-contents:hover {
-    animation: illuminate 500ms ease-out forwards;
+    animation: illuminate 250ms ease-in-out forwards;
 }
 
 @keyframes illuminate {
 
     100% {
         background-color: rgba(202,155,247, 0.3);
+        transform: scale(1.05);
     }
 }
 
