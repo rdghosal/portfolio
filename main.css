@@ -510,6 +510,9 @@ hr {
 .resume-container button:hover,
 .resume-container button:focus {
     background-color: rgba(15,76,129,0.4);
+}
+
+.resume-container button:active {
     transform: translateY(4px);
 }
 
