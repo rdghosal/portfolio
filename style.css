@@ -230,11 +230,6 @@ nav > .logo {
     margin-top: 10em;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-}
-
 .card-container {
     display: grid;
     justify-items: center;
@@ -242,14 +237,59 @@ nav > .logo {
     
 }
 
-
 .card {
     background-color: #dcefff;
-    height: 250px;
+    /* height: 250px; */
     width: 100%;
     border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: space-evenly;
 }
 
+.card > *:not(.card__project-links) {
+    margin-bottom: 1em;
+}
+
+.card__project-subtitle, .card__project-title,
+.card__project-link {
+    font-family: var(--text-font-med);
+    letter-spacing: 0.05em;
+}
+
+.card__project-title {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card__project-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.card__tech-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #999;
+    padding: 1em;
+    border-radius: 0.5rem;
+}
+
+.card__project-desc {
+    font-family: var(--text-font-light);
+}
+
+.card__project-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+}
+
+.card__project-link {
+    color: #0088FF;
+}
 
 .footer {
     position: relative;
