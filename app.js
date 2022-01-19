@@ -1,5 +1,6 @@
 function initializePage() {
     initializeButtonLinks();
+    intializeResumeBtn();
     initializeObservers();
 }
 
@@ -18,6 +19,15 @@ function initializeButtonLinks() {
     });  
 }
 
+function intializeResumeBtn() {
+    const btn = document.querySelector(".hero__btn--resume");
+    btn.addEventListener("click", () => {
+        window.open(
+            "Resume_Rahul D Ghosal.pdf", "_blank"
+        );
+    });
+}
+
 const containerLinkMap = {
     "container--web": ".nav-link.web",
     "container--mobile": ".nav-link.mobile",
@@ -28,7 +38,7 @@ function initializeObservers() {
 
     const containers = document.querySelectorAll(".container");
     const options = {
-        rootMargin: "-50%"
+        rootMargin: "-50% 0% 0% 0%"
     };
 
     const containerObserver = new IntersectionObserver((entries, containerObserver) => {

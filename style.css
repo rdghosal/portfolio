@@ -90,12 +90,12 @@ a {
 }
 
 .hero__logo {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 2em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .logo {
+    font-size: 1.2rem;
     letter-spacing: 0.065em;
     font-family: var(--header-font-light);
     font-weight: 700;
@@ -154,9 +154,10 @@ nav {
     top: 0px;
     display: grid;
     grid-template-areas:
-        "links links links links home";
+        "logo links links links links home";
     padding: 1.5em 2.0em;
     align-items: center;
+    align-content: center;
     max-height: 65px;
     justify-items: center;
     background-color: var(--primary-clr-light);
@@ -261,6 +262,16 @@ nav > .logo {
 
 .card.display {
     animation: card-appear 1500ms forwards ease-out;
+}
+
+.card:hover {
+    background-color: rgba(220, 239, 255, 0.8);
+}
+
+@keyframes card-hover {
+    100% {
+        transform: translateY(3px);        
+    }
 }
 
 @keyframes card-appear {
@@ -368,6 +379,15 @@ nav > .logo {
     text-align: center;
 }
 
+.nav > .logo:hover,
+.nav > .logo:active,
+.nav > .logo:focus,
+.card__project-link:hover,
+.card__project-link:focus
+.card__project-link:active {
+    color: rgba(var(--primary-clr-dark), 0.5);
+}
+
 .card__project-links > *:nth-child(1) {
     text-align: left;
     padding-left: 0.75em;
@@ -447,4 +467,209 @@ nav > .logo {
     position: absolute;
     margin-right: -75%;
     margin-bottom: -5%;
+}
+
+@media screen and (min-width: 550px) {
+
+    .container {
+        padding: 1.5em 3em;
+    }
+
+    .card__tech-container {
+        justify-content: space-evenly;
+    }
+
+    .card {
+        max-width: 85%;
+    }
+
+    .hero__headline {
+        font-size: 4rem;
+    }
+
+    nav {
+        padding-right: 3.5em;
+        padding-left: 3.5em;
+    }
+
+    .nav__nav-links {
+        justify-content: space-evenly;
+    }
+
+    .footer__social-links {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 730px) {
+
+    .card {
+        padding: 3em 3em 2em 3em;
+        max-width: 60%;
+    }
+
+    .card__project-links >*:nth-child(1) {
+        padding-left: -50%; 
+    }
+
+    .card__project-links >*:nth-child(2) {
+        padding-right: -50%; 
+    }
+
+    .card__tech-container.other {
+        margin-bottom: 2em;
+    }
+
+    .hero__text {
+        width: 75ch;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .nav > .logo {
+        display: inline-block;
+        grid-area: logo;
+        color: #dcefff;
+    }
+
+    nav {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    .hero__headline {
+        font-size: 4.5rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75em;
+    }
+
+
+    .card-container.one {
+        grid-template-columns: 33%;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 1.5em 1.5em;
+    } 
+
+    .card__tech-container.other {
+        margin-bottom: 1.5em;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 2em 2em 1.5em 2em;
+    }
+
+    .footer__social-links {
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (min-width: 1250px) {
+
+
+    .hero > *:not(.hero__design) {
+        z-index: 100;
+    }
+
+    .hero__design {
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 0;
+        background-image: url(./img/hero_design.svg);
+        background-color: var(--primary-clr-dark);
+        background-size: contain;
+        background-repeat: none;
+        width: 600px;
+        height: 600px;
+    }
+
+    .hero > *:not(.hero__design, .hero__logo) {
+        position: absolute;
+        right: 0;
+    }
+
+    .hero__headline {
+        top: 25%;
+        font-size: 5rem;
+        text-align: right;
+        padding-right: 3rem;
+    }
+
+    .hero__text {
+        top: 40%;
+        width: 75ch;
+        text-align: right;
+        padding-right: 3rem;
+    }
+
+    .hero__btns {
+        align-items: end;
+        padding-right: 3rem;
+        top: 60%;
+    }
+
+    .container {
+        padding: 1.5em 2.0em;
+    }
+
+    .card-container {
+        gap: 2em;
+    }
+
+}
+
+
+@media screen and (min-width: 1350px) {
+
+    .hero__text, .hero__btns {
+        padding-right: 5em;
+    }
+
+    .card {
+        padding: 3em 3em 2em 3em;
+    }
+
+    .card__project-links >*:nth-child(1) {
+        padding-left: -50%; 
+    }
+
+    .card__project-links >*:nth-child(2) {
+        padding-right: -50%; 
+    }
+
+    .card__tech-container.other {
+        margin-bottom: 2em;
+    }
+
+    .container {
+        padding: 1.5em 5em;
+    }
+
+}
+
+@media screen and (min-width: 1450px) {
+
+    .hero__design {
+        width: 750px;
+        height: 750px;
+    }
+
+    .hero__headline {
+        font-size: 5.5rem;
+    }
+
+
 }
