@@ -14,7 +14,7 @@ function initializeButtonLinks() {
     Object.keys(buttonLinkMap).forEach(k => {
         let el = document.querySelector(k);        
         el.addEventListener('click', () => {
-            window.location = `${window.location.origin + buttonLinkMap[k]}`;
+            window.location = `${buttonLinkMap[k]}`;
         });
     });  
 }
