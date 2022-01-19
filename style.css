@@ -205,6 +205,10 @@ nav > .logo {
     font-size: 1.20rem;
 }
 
+.nav-link.active {
+    color: var(--accent-clr-light);
+}
+
 .portfolio {
     background-color: var(--primary-clr-light);
     padding-bottom: 3em;
@@ -252,6 +256,22 @@ nav > .logo {
     padding: 2em;
     justify-content: space-evenly;
     box-shadow: 0 2px 5px 0 rgb(45, 153, 247);
+    opacity: 0;
+}
+
+.card.display {
+    animation: card-appear 1500ms forwards ease-out;
+}
+
+@keyframes card-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .card__project-subtitle,
@@ -371,6 +391,10 @@ nav > .logo {
 
 .card__project-links.private-site.private-repo {
     display: none;
+}
+
+.container--misc {
+    margin-bottom: 3em;
 }
 
 .footer {
