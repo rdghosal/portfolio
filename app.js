@@ -23,7 +23,7 @@ function intializeResumeBtn() {
     const btn = document.querySelector(".hero__btn--resume");
     btn.addEventListener("click", () => {
         window.open(
-            "Resume_Rahul D Ghosal.pdf", "_blank"
+            "./assets/Resume_Rahul D Ghosal.pdf", "_blank"
         );
     });
 }
