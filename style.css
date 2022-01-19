@@ -601,6 +601,12 @@ nav > .logo {
         right: 0;
     }
 
+    .hero__logo {
+        position: absolute;
+        left: 0;
+        padding-left: 3rem;
+    }
+
     .hero__headline {
         top: 25%;
         font-size: 5rem;
@@ -633,6 +639,10 @@ nav > .logo {
 
 
 @media screen and (min-width: 1350px) {
+
+    .hero__logo {
+        padding-left: 5em;
+    }
 
     .hero__text, .hero__btns {
         padding-right: 5em;
