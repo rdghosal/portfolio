@@ -475,6 +475,17 @@ nav > .logo {
     margin-bottom: -5%;
 }
 
+@media screen and (min-width: 350px) and (orientation: landscape) {
+    .hero {
+        height: 100%;
+    }
+
+    .hero__btns {
+        justify-content: space-between;
+        height: 30%;
+    }
+}
+
 @media screen and (min-width: 550px) {
 
     .container {
