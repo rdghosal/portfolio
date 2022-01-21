@@ -155,7 +155,7 @@ nav {
     top: 0px;
     display: grid;
     grid-template-areas:
-        "logo links links links home";
+        "links links links home";
     padding: 1.5em 2.0em;
     align-items: center;
     align-content: center;
@@ -168,8 +168,8 @@ nav {
 .nav__nav-links {
     grid-area: links;
     display: flex;
-    justify-content: start;
-    gap: 3em;
+    justify-content: space-between;
+    justify-self: start;
     font-weight: 550;
     width: 100%;
     padding: 0 0.5em;
@@ -558,6 +558,7 @@ nav > .logo {
     nav {
         padding-top: 2.5em;
         padding-bottom: 2.5em;
+        grid-template-areas: "logo links links links home";
     }
 
     .nav-link {
@@ -692,8 +693,8 @@ nav > .logo {
     }
 
     .nav {
-        padding-left: 5em;
-        padding-right: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
     }
 
 }
