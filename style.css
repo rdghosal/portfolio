@@ -125,6 +125,7 @@ span.emphasis {
     justify-content: space-between;
     height: 25vh;
     width: 50%;
+    max-height: calc((2em + 1.10rem) * 3 + 4em) ;
     align-items: center;
 }
 
@@ -136,7 +137,7 @@ span.emphasis {
     background-color: var(--accent-clr-med);
     border: none;
     border-radius: 0.5em;
-    font-size: 1.10em;
+    font-size: 1.10rem;
 }
 
 .hero__btns > button:focus,
@@ -154,7 +155,7 @@ nav {
     top: 0px;
     display: grid;
     grid-template-areas:
-        "logo links links links links home";
+        "logo links links links home";
     padding: 1.5em 2.0em;
     align-items: center;
     align-content: center;
@@ -167,8 +168,8 @@ nav {
 .nav__nav-links {
     grid-area: links;
     display: flex;
-    justify-content: space-between;
-    justify-self: center;
+    justify-content: start;
+    gap: 3em;
     font-weight: 550;
     width: 100%;
     padding: 0 0.5em;
@@ -203,7 +204,7 @@ nav > .logo {
 .nav-link {
     color: var(--primary-clr-med);
     font-family: var(--text-font-med);
-    font-size: 1.20rem;
+    font-size: 1.10rem;
 }
 
 .nav-link.active {
@@ -551,11 +552,16 @@ nav > .logo {
         display: inline-block;
         grid-area: logo;
         color: #dcefff;
+        justify-self: start;
     }
 
     nav {
         padding-top: 2.5em;
         padding-bottom: 2.5em;
+    }
+
+    .nav-link {
+        font-size: 1.20rem;
     }
 
     .hero__headline {
@@ -649,7 +655,7 @@ nav > .logo {
     }
 
     .card-container {
-        gap: 2em;
+        gap: 3em;
     }
 
 }
@@ -683,6 +689,11 @@ nav > .logo {
 
     .container {
         padding: 1.5em 5em;
+    }
+
+    .nav {
+        padding-left: 5em;
+        padding-right: 5em;
     }
 
 }
