@@ -96,7 +96,7 @@ a {
 
 .logo {
     font-size: 1.2rem;
-    letter-spacing: 0.065em;
+    letter-spacing: 0.15em;
     font-family: var(--header-font-light);
     font-weight: 700;
 }
@@ -163,6 +163,10 @@ nav {
     justify-items: center;
     background-color: var(--primary-clr-light);
     z-index: 1000;
+}
+
+nav > .logo {
+    font-size: 1em;
 }
 
 .nav__nav-links {
@@ -512,8 +516,8 @@ nav > .logo {
 
     .nav__nav-links {
         justify-content: space-evenly;
-    }
 
+    }
     .footer__social-links {
         width: 50%;
     }
@@ -565,6 +569,15 @@ nav > .logo {
         font-size: 1.20rem;
     }
 
+    .nav__nav-links {
+        justify-content: start;
+
+    }
+
+    .nav__nav-links > *:not(:first-child) {
+        padding-left: 7em;
+    }
+
     .hero__headline {
         font-size: 4.5rem;
     }
@@ -595,6 +608,7 @@ nav > .logo {
 
     .footer__social-links {
         width: 30%;
+        max-width: 45ch;
     }
 
 }
