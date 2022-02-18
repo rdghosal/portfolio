@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+
+:root {
+    --space-med: 1.5em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+ol > li {
+    margin-bottom: 0.50em;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f0f1f2 !important;
+}
+
+span {
+    color: #3587B9;
+    font-weight: 600;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #085079, #3587B9);
+    color: white;
+    width: 100%;
+    padding: var(--space-med);
+}
+
+section {
+    padding: var(--space-med);
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-weight: 300 !important;
+    font-family: 'Great Vibes', 'Lucida Grande' !important;
+    letter-spacing: 0.075em;
+}
+
+.root {
+    position: relative;
+    height: 100vh;
+}
+
+.wrapper > *:last-child {
+    margin-bottom: 7.5em;
+}
+
+ol {
+    width: 100%; 
+    padding-left: var(--space-med) !important;
+}
+
+.tech-stack > li, .challenges > li, .improvements > li {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+footer {
+    position: fixed;
+    background-image: linear-gradient(to left, #085079, #3587B9);
+    top: calc(100vh - 5em);
+    height: 5em;
+    width: 100%;
+}
+
+footer > ul {
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-link {
+    color: white !important;
+}
+
+@media screen and (min-width: 850px) {
+
+    .banner {
+        margin-bottom: var(--space-med); 
+    }
+
+    .wrapper {
+        width: 75%;
+        margin: 0 auto;
+        gap: var(--space-med);
+    }
+
+    section {
+        padding: calc(var(--space-med) * 1.5);
+        box-shadow: 0 0 10px 1px rgba(53, 135, 185, 0.2);
+        border-radius: 0.5em;
+    }
+}

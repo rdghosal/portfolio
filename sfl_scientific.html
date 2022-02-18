@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sfl_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>SFL Scientific | Rahul Ghosal</title>
+</head>
+<body>
+    <div class="root">
+        <div class="banner">
+            <h2 class="project-title">Wave Native</h2>
+            <h1 class="project-subtitle">React / Flask Web Application</h1>
+        </div>
+        <div class="wrapper">
+            <section>
+                <h3>Background</h3>
+                <p class="section__text">
+                    Living in Japan, I was often met with English learners, who had a proficient grasp of the language,
+                    but often struggled with pronunciation of certain words.
+                    This inspired the idea of Wave Native, <span>an application dedicated to serious students of the language</span> with the following features to assist their learning:
+                </p>
+                <ol class="feature-list">
+                    <li>Audio files for queried words that could be played on the browser or downloaded.</li>
+                    <li>A recording interface whereby users can attempt their own pronunciation of words.</li>
+                    <li>Visual representations of fetched audio files and user recordings, such that the user may compare their attempt against native pronunciation.</li>
+                    <li>User profiles where a user may track their commonly queried words.</li>
+                </ol>
+            </section>
+            <section>
+                <h3>My Role</h3>
+                <p class="section__text">
+                    In this project, <span>I was the sole developer and project owner</span>. Thus, my responsibilities comprised of the following:
+                    <ol class="responsibilities">
+                        <li>Understanding the domain of language acquisition, particularly as is related to pronunciation.</li>
+                        <li>Selecting the choice of visual representation for auditory data, with a focus on the question of "<span>What would be most relevant to users</span> without backgrounds in linguistics and other technical fields?"</li>
+                        <li>Finding an accessible source for audio data, as supplying the data myself was infeasible.</li>
+                        <li>Architecting and developing both the client and API.</li>
+                        <li>Architecting the database and designing the necessary SQL queries.</li>
+                        <li>Testing the application, namely though manual end-to-end testing.</li>
+                        <li>Deploying the application.</li>
+                    </ol>
+                </p>
+            </section>
+            <section>
+                <h3>Technologies</h3>
+                <p class="section__text">
+                    In this project, I had chosen the following tech stack.
+                </p>
+                <ol class="tech-stack">
+                    <li>React</li>
+                    <p class="tech-desc">
+                        In the design of the client, there were elements whose styling and behavior would need to be consistent throughout. As such, React, which is modeled on the idea of components, appeared to be an appropriate choice.
+                    </p>
+                    <li>Flask</li>
+                    <p class="tech-desc">
+                        Anticipating a need for computation and numerical analysis, I chose Python as the language for the backend. Without a need for a number of the features included in Django, Flask appeared to be an appropriate choice as a lightweight API framework.
+                    </p>
+                    <li>Postgresql</li>
+                    <p class="tech-desc">
+                        The data models lends itself to a relational database, and Postgresql provides a free-tier fitting the project budget.
+                    </p>
+                </ol>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+                <p class="section__text">
+                    In the planning and development of this project were the following challenges.
+                </p>
+                <ol class="challenges">
+                    <li>Back-end performance</li>
+                    <p class="challenge-desc">
+                        Given the necessity to source data from a third-party API, each query made in the client will require at least two network calls: (1) Between the client and the Wave Native API and (2) Between the Wave Native API and the third-party API.
+                        <span>Network calls are expensive</span> from a performance perspective and could prove especially so for users with poor internet connection.
+                    </p>
+                    <li>Algorithm design</li>
+                    <p class="challenge-desc">
+                        Features wherein the user has more quantitative feedback would be useful, especially in terms of tracking language acquisition progress. For example, an algorithm wherein native and user-recorded audio files are compared could provide helpful feedback to the user.
+                        Implementing this, however, requires a greater level of <span>subject matter expertise</span>, particularly in audio file comparison that accounts for situations where the user is not in ideal settings for recording and other circumstances that could negatively impact accuracy of the algorithm.
+                    </p>
+                    <li>Browser support</li>
+                    <p class="challenge-desc">
+                        The recording interface (whereby the user may recording their own attempt at pronouncing a word), faces the issue of browser support namely as the browser API for microphone access varies. Therefore, while microphone access might be readily available in Google Chrome, in other browsers, like Safari, this may not be the case and, as a result, a major feature could be rendered <span>inaccessible to a subset of users</span>.
+                        Resolving this issue requires study and implementation of workarounds for browsers that are currently incompatible.
+                    </p>
+                </ol> 
+            </section>
+            <section>
+                <h3>To Do: Points For Improvement</h3>
+                <p class="section__text">
+                    In retrospect, there are several aspects of the application that I hope to improve in the future, both at a code and design level.
+                    <ol class="improvements">
+                        <li>Input validation</li>
+                        <p class="improvement-desc">
+                            Currently, input data is not sanitized. That is, the application is vulnerable to attempts at hacking by the user and requires <span>more robust security</span>. Possible solutions here could include the inclusion of a third-party library that, for example, checks user input for attempts at SQL injection attacks and the like.
+                        </p>
+                        <li>UI design</li>
+                        <p class="improvement-desc">
+                            While the user may be able to intuit usage of the application from the UI, the UX could be better served with more intentional <span>visual hierarchy</span>.
+                            For example, the media buttons, whereby the user interacts with the audio file, break from the overall color scheme of the site while not being consistent with each other, thereby obscuring the call-to-action.
+                            A similar comment can be made for the user login modal, which has, again, different colored buttons for no particular reason from a UX-perspective, while also violating good design principles, such as negative space, with its lack of padding.
+                        </p>
+                        <li>Front-end architecture</li>
+                        <p class="improvement-desc">
+                            Although the front-end is divided into React components, the current <span>segregations of state-related logic</span> are not intuitive. State, for instance, is often being affected by components that should not have such authority.
+                            As such, the client code is susceptible to bugs and could be improved with an architecture oriented toward the flow of data in the client.
+                        </p>
+                        <li>Back-end architecture</li>
+                        <p class="improvement-desc">
+                            From a code maintenance perspective, the API is separated into controller, model, and service layers, which limits coupling between logic that is inherently separate.
+                            However, closer examination of the code reveals that the <span>Single-Responsibility Principle</span> is violated in places, where, for example, service layer logic is in a controller and the like.
+                            Such instances are worth refactoring, particularly if there are plans to expand or enchance the feature set of the API.
+                        </p>
+                    </ol>
+                </p>
+            </section>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://github.com/rdghosal/WaveNative" class="project-link" target="_blank">See Code</a>
+                </li>
+                <li>
+                    <a href="https://wave-native.herokuapp.com/" class="project-link" target="_blank">See Site</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
