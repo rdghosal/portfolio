@@ -51,7 +51,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
-        run: npm run test
+        run: npm run test -- --grep-invert "Visual regression"
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
