@@ -39,6 +39,25 @@ repos:
   #     - id: no-commit-to-branch
   #       args: [--branch, main, --branch, master]
 
+  # HTML/CSS — linting and formatting (non-blocking)
+  - repo: local
+    hooks:
+      - id: html-validate
+        name: html-validate
+        language: system
+        entry: npx html-validate || true
+        types: [html]
+        pass_filenames: true
+
+  - repo: local
+    hooks:
+      - id: stylelint
+        name: stylelint
+        language: system
+        entry: npx stylelint --fix || true
+        types: [css]
+        pass_filenames: true
+
   # JavaScript — formatting and linting
   - repo: local
     hooks:
