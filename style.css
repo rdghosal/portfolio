@@ -1,29 +1,29 @@
 @font-face {
-  font-family: "Quark-Bold";
+  font-family: Quark-Bold;
   src: url("./fonts/Quark-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Quark-Light";
+  font-family: Quark-Light;
   src: url("./fonts/Quark-Light.ttf");
 }
 
 @font-face {
-  font-family: "Hanken-Book";
+  font-family: Hanken-Book;
   src: url("./fonts/Hanken-Book.ttf");
 }
 
 @font-face {
-  font-family: "Hanken-Light";
+  font-family: Hanken-Light;
   src: url("./fonts/Hanken-Light.ttf");
 }
 
 :root {
-  --primary-clr-med: rgb(15, 75, 128);
-  --primary-clr-dark: rgb(14, 62, 104);
-  --primary-clr-light: rgb(130, 197, 255);
-  --accent-clr-med: rgb(250, 220, 115);
-  --accent-clr-light: rgb(243, 227, 185);
+  --primary-clr-med: rgb(15 75 128);
+  --primary-clr-dark: rgb(14 62 104);
+  --primary-clr-light: rgb(130 197 255);
+  --accent-clr-med: rgb(250 220 115);
+  --accent-clr-light: rgb(243 227 185);
   --header-font-bold: "Quark-Bold", "sans-serif";
   --header-font-light: "Quark-Light", "sans-serif";
   --text-font-med: "Hanken-Book", "sans-serif";
@@ -90,7 +90,7 @@ a {
 
 .hero__logo {
   margin-bottom: 2em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255 255 255 / 60%);
 }
 
 .logo {
@@ -151,14 +151,13 @@ span.emphasis {
 
 nav {
   position: sticky;
-  top: 0px;
+  top: 0;
   display: grid;
   grid-template-areas: "links links links home";
   padding: 1.5em 2em;
-  align-items: center;
+  place-items: center center;
   align-content: center;
   max-height: 65px;
-  justify-items: center;
   background-color: var(--primary-clr-light);
   z-index: 1000;
 }
@@ -179,7 +178,7 @@ nav > .logo {
 
 .nav-link:hover,
 .nav-link:active {
-  color: rgba(var(--primary-clr-dark), 0.5);
+  color: rgb(var(--primary-clr-dark), 0.5);
 }
 
 .nav__home-btn:hover,
@@ -258,7 +257,7 @@ nav > .logo {
   flex-direction: column;
   padding: 2em;
   justify-content: space-evenly;
-  box-shadow: 0 2px 5px 0 rgb(45, 153, 247);
+  box-shadow: 0 2px 5px 0 rgb(45 153 247);
   opacity: 0;
 }
 
@@ -267,7 +266,7 @@ nav > .logo {
 }
 
 .card:hover {
-  background-color: rgba(220, 239, 255, 0.8);
+  background-color: rgb(220 239 255 / 80%);
 }
 
 @keyframes card-hover {
@@ -281,9 +280,10 @@ nav > .logo {
     opacity: 0;
     transform: translateY(-100px);
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
@@ -376,7 +376,7 @@ nav > .logo {
 }
 
 .card__project-link {
-  color: #0088ff;
+  color: #08f;
   width: 50%;
   font-size: 1.15rem;
   text-align: center;
@@ -387,7 +387,7 @@ nav > .logo {
 .nav > .logo:focus,
 .card__project-link:hover,
 .card__project-link:focus .card__project-link:active {
-  color: rgba(var(--primary-clr-dark), 0.5);
+  color: rgb(var(--primary-clr-dark), 0.5);
 }
 
 .card__project-links > *:nth-child(1) {
@@ -416,7 +416,7 @@ nav > .logo {
   width: 100%;
   text-align: center;
   font-family: var(--text-font-med);
-  color: rgba(51, 51, 51, 0.5);
+  color: rgb(51 51 51 / 50%);
   font-style: italic;
   letter-spacing: 0.075em;
 }
@@ -478,7 +478,7 @@ nav > .logo {
   margin-bottom: -5%;
 }
 
-@media screen and (min-width: 350px) and (orientation: landscape) {
+@media screen and (width >= 350px) and (orientation: landscape) {
   .hero {
     height: 100%;
   }
@@ -489,7 +489,7 @@ nav > .logo {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (width >= 550px) {
   .container {
     padding: 1.5em 3em;
   }
@@ -514,14 +514,15 @@ nav > .logo {
   .nav__nav-links {
     justify-content: space-evenly;
   }
+
   .footer__social-links {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (width >= 730px) {
   .card {
-    padding: 3em 3em 2em 3em;
+    padding: 3em 3em 2em;
     max-width: 60%;
   }
 
@@ -542,7 +543,7 @@ nav > .logo {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (width >= 1000px) {
   .nav > .logo {
     display: inline-block;
     grid-area: logo;
@@ -583,7 +584,7 @@ nav > .logo {
   }
 
   .container {
-    padding: 1.5em 1.5em;
+    padding: 1.5em;
   }
 
   .card__tech-container.other {
@@ -592,7 +593,7 @@ nav > .logo {
 
   .card {
     max-width: 100%;
-    padding: 2em 2em 1.5em 2em;
+    padding: 2em 2em 1.5em;
   }
 
   .footer__social-links {
@@ -601,7 +602,7 @@ nav > .logo {
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (width >= 1250px) {
   .hero > *:not(.hero__design) {
     z-index: 100;
   }
@@ -611,7 +612,7 @@ nav > .logo {
     display: inline-block;
     bottom: 0;
     left: 0;
-    background-image: url(./img/hero_design.svg);
+    background-image: url("./img/hero_design.svg");
     background-color: var(--primary-clr-dark);
     background-size: contain;
     background-repeat: none;
@@ -659,7 +660,7 @@ nav > .logo {
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (width >= 1350px) {
   .hero__logo {
     padding-left: 5em;
   }
@@ -670,7 +671,7 @@ nav > .logo {
   }
 
   .card {
-    padding: 3em 3em 2em 3em;
+    padding: 3em 3em 2em;
   }
 
   .card__project-links > *:nth-child(1) {
@@ -695,7 +696,7 @@ nav > .logo {
   }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (width >= 1450px) {
   .hero__design {
     width: 750px;
     height: 750px;
