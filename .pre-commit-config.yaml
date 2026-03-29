@@ -59,6 +59,27 @@ repos:
         types: [html]
         pass_filenames: true
 
+  # CSS linting with stylelint
+  - repo: local
+    hooks:
+      - id: stylelint
+        name: stylelint
+        language: system
+        entry: npx stylelint --fix
+        types: [css]
+        pass_filenames: true
+
+  # Playwright E2E tests
+  - repo: local
+    hooks:
+      - id: playwright
+        name: playwright e2e tests
+        language: system
+        entry: npm run test
+        pass_filenames: false
+        stages: [pre-push]
+        verbose: true
+
   # Cyclomatic complexity check
   - repo: local
     hooks:
