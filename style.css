@@ -108,7 +108,7 @@ a {
     color: white;
     line-height: 2.25em;
     letter-spacing: 0.075em;
-    margin-bottom: 3rem;    
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -142,7 +142,7 @@ span.emphasis {
 
 .hero__btns > button:focus,
 .hero__btns > button:hover {
-    background-color: var(--accent-clr-light);    
+    background-color: var(--accent-clr-light);
     cursor: pointer;
 }
 
@@ -250,7 +250,7 @@ nav > .logo {
     display: grid;
     justify-items: center;
     gap: 2em;
-    
+
 }
 
 .card {
@@ -275,7 +275,7 @@ nav > .logo {
 
 @keyframes card-hover {
     100% {
-        transform: translateY(3px);        
+        transform: translateY(3px);
     }
 }
 
@@ -302,7 +302,7 @@ nav > .logo {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: -0.50rem;
-    z-index: 100; 
+    z-index: 100;
     background-color: #dcefff;
     width: max-content;
     padding: 0 0.5em;
@@ -438,7 +438,7 @@ nav > .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3em; 
+    padding: 3em;
 }
 
 .footer__credits, .footer__social-links {
@@ -532,11 +532,11 @@ nav > .logo {
     }
 
     .card__project-links >*:nth-child(1) {
-        padding-left: -50%; 
+        padding-left: -50%;
     }
 
     .card__project-links >*:nth-child(2) {
-        padding-right: -50%; 
+        padding-right: -50%;
     }
 
     .card__tech-container.other {
@@ -595,7 +595,7 @@ nav > .logo {
 
     .container {
         padding: 1.5em 1.5em;
-    } 
+    }
 
     .card__tech-container.other {
         margin-bottom: 1.5em;
@@ -691,11 +691,11 @@ nav > .logo {
     }
 
     .card__project-links >*:nth-child(1) {
-        padding-left: -50%; 
+        padding-left: -50%;
     }
 
     .card__project-links >*:nth-child(2) {
-        padding-right: -50%; 
+        padding-right: -50%;
     }
 
     .card__tech-container.other {

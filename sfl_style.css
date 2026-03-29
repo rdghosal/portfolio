@@ -66,7 +66,7 @@ section {
 }
 
 ol {
-    width: 100%; 
+    width: 100%;
     padding-left: var(--space-med) !important;
 }
 
@@ -99,7 +99,7 @@ footer > ul {
 @media screen and (min-width: 850px) {
 
     .banner {
-        margin-bottom: var(--space-med); 
+        margin-bottom: var(--space-med);
     }
 
     .wrapper {
