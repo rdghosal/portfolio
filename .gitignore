@@ -1,1 +1,13 @@
 _bak
+
+# Dependencies
+node_modules/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# OS files
+.DS_Store

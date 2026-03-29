@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "font-family-name-quotes": "always-where-recommended",
+    "selector-class-pattern": null,
+    "custom-property-pattern": null,
+    "keyframes-name-pattern": null,
+    "no-duplicate-selectors": null,
+    "no-descending-specificity": null,
+    "declaration-property-value-no-unknown": null
+  }
+}
