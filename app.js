@@ -38,17 +38,20 @@ function initializeObservers() {
     rootMargin: "-50% 0% 0% 0%",
   };
 
-  const containerObserver = new IntersectionObserver((entries, containerObserver) => {
-    entries.forEach((e) => {
-      const currClass = e.target.classList[0];
+  const containerObserver = new IntersectionObserver(
+    (entries, containerObserver) => {
+      entries.forEach((e) => {
+        const currClass = e.target.classList[0];
 
-      if (e.isIntersecting) {
-        toggleActiveNavLink(containerLinkMap[currClass], true);
-      } else {
-        toggleActiveNavLink(containerLinkMap[currClass], false);
-      }
-    });
-  }, options);
+        if (e.isIntersecting) {
+          toggleActiveNavLink(containerLinkMap[currClass], true);
+        } else {
+          toggleActiveNavLink(containerLinkMap[currClass], false);
+        }
+      });
+    },
+    options,
+  );
 
   const cardObserver = new IntersectionObserver((entries, cardObserver) => {
     entries.forEach((e) => {

@@ -1,421 +1,563 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Rahul D. Ghosal's software engineering portfolio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Rahul D. Ghosal's software engineering portfolio"
+    />
     <!-- <meta property="og:image" content="./img/meta.PNG"> -->
-    <meta name="keywords" content="JavaScript, TypeScript, Python, automation engineering, web development, mobile development">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="keywords"
+      content="JavaScript, TypeScript, Python, automation engineering, web development, mobile development"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahul D. Ghosal | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="hero">
-        <div class="hero__logo logo">Rahul D. Ghosal</div>
-        <div class="hero__design">
-        </div>
-        <p class="hero__headline">
-            Depth-first versatility
-        </p>
-        <p class="hero__text">
-            You need a <span class="emphasis">leader</span> who can be a team player.
-            A <span class="emphasis">diligent specialist</span> with flexible curiosity.
-            The good news? The search ends <span class="emphasis">here</span>.
-        </p>
-        <div class="hero__btns">
-            <button class="hero__btn--view">
-                View Portfolio
-            </button>
-            <button class="hero__btn--resume">
-                See Resume
-            </button>
-            <button class="hero__btn--contact">
-                Contact
-            </button>
-        </div>
+      <div class="hero__logo logo">Rahul D. Ghosal</div>
+      <div class="hero__design"></div>
+      <p class="hero__headline">Depth-first versatility</p>
+      <p class="hero__text">
+        You need a <span class="emphasis">leader</span> who can be a team
+        player. A <span class="emphasis">diligent specialist</span> with
+        flexible curiosity. The good news? The search ends
+        <span class="emphasis">here</span>.
+      </p>
+      <div class="hero__btns">
+        <button type="button" class="hero__btn--view">View Portfolio</button>
+        <button type="button" class="hero__btn--resume">See Resume</button>
+        <button type="button" class="hero__btn--contact">Contact</button>
+      </div>
     </section>
     <section class="portfolio" id="portfolio">
-        <nav class="nav">
-            <a href="#" class="logo">Rahul D. Ghosal</a>
-            <ul class="nav__nav-links">
-                <li>
-                    <a href="#web" class="nav-link web">Web</a>
-                </li>
-                <li>
-                    <a href="#mobile" class="nav-link mobile">Mobile</a>
-                </li>
-                <li>
-                    <a href="#misc" class="nav-link misc">Misc</a>
-                </li>
-            </ul>
-            <svg width="50" height="50" class="nav__home-btn" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M46.2158 24.6582L26.1035 4.56057C25.9587 4.41547 25.7867 4.30036 25.5973 4.22181C25.408 4.14327 25.205 4.10284 25 4.10284C24.795 4.10284 24.592 4.14327 24.4027 4.22181C24.2133 4.30036 24.0413 4.41547 23.8965 4.56057L3.78418 24.6582C3.19824 25.2442 2.86621 26.0401 2.86621 26.8701C2.86621 28.5938 4.26758 29.9951 5.99121 29.9951H8.11035V44.336C8.11035 45.2002 8.80859 45.8985 9.67285 45.8985H21.875V34.961H27.3437V45.8985H40.3271C41.1914 45.8985 41.8896 45.2002 41.8896 44.336V29.9951H44.0088C44.8389 29.9951 45.6348 29.668 46.2207 29.0772C47.4365 27.8565 47.4365 25.8789 46.2158 24.6582V24.6582Z" fill="#0E3E68"/>
-            </svg>
-        </nav>
-        <div class="container--web container" id="web">
-            <h1 class="section-title">
-                Web Applications
-            </h1>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card__project-title">
-                        Wave Native
-                    </div>
-                    <div class="card__project-subtitle">
-                        Flask / React Audio Data Visualizer
-                    </div>
-                    <div class="card__project-desc">
-                        Queries third-party API for audio file of a user-specified English word and renders visualization.
-                        Tracks most popular queries made by user, a list of which is acceessible upon user registration.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages">
-                        <div class="tech-icon">
-                            <img src="./img/python_icon.svg" alt="python" class="tech-icon-img">
-                            <p class="tech-icon__label">Python</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/javascript_icon.svg" alt="javascript" class="tech-icon-img">
-                            <p class="tech-icon__label">JavaScript</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/sql_icon.svg" alt="sql" class="tech-icon-img">
-                            <p class="tech-icon__label">SQL</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other">
-                        <div class="tech-icon">
-                            <img src="./img/postgresql_icon.svg" alt="postgresql" class="tech-icon-img">
-                            <p class="tech-icon__label">Postgresql</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/bootstrap_icon.svg" alt="bootstrap" class="tech-icon-img">
-                            <p class="tech-icon__label">Bootstrap</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/heroku_icon.svg" alt="heroku" class="tech-icon-img">
-                            <p class="tech-icon__label">Heroku</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links">
-                        <a href="https://github.com/rdghosal/WaveNative" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="https://wave-native.herokuapp.com" class="card__project-link" target="_blank">See Site</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__project-title">
-                        Better Bard
-                    </div>
-                    <div class="card__project-subtitle">
-                        .NET Core / React Typing Speed Test
-                    </div>
-                    <div class="card__project-desc">
-                        Provides 154 Shakespeare sonnets for user to hone their typing speed and accuracy.
-                        Time, accuracy, and other metrics are accessible upon user registration and JWT login authentication.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages">
-                        <div class="tech-icon">
-                            <img src="./img/csharp_icon.svg" alt="csharp" class="tech-icon-img">
-                            <p class="tech-icon__label">C Sharp</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/typescript_icon.svg" alt="typescript" class="tech-icon-img">
-                            <p class="tech-icon__label">TypeScript</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/sql_icon.svg" alt="sql" class="tech-icon-img">
-                            <p class="tech-icon__label">SQL</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other">
-                        <div class="tech-icon">
-                            <img src="./img/mssql_icon.svg" alt="mssql" class="tech-icon-img">
-                            <p class="tech-icon__label">MSSQL</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/docker_icon.svg" alt="docker" class="tech-icon-img">
-                            <p class="tech-icon__label">Docker</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/aws_icon.svg" alt="aws" class="tech-icon-img">
-                            <p class="tech-icon__label">AWS</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links private-site">
-                        <a href="https://github.com/rdghosal/TypeOnWillie" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="" class="card__project-link" target="_blank">See Site</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__project-title">
-                        Nyayumi's Cat Café
-                    </div>
-                    <div class="card__project-subtitle">
-                        Flask / React Cat Image Searching and Sharing
-                    </div>
-                    <div class="card__project-desc">
-                        Provides interface similar to Instragram for user to search for a random collection of cat images
-                        filtered by cat breed or category (such as 'hats', 'sunglasses', etc.). Images can be downloaded locally or shared using the Web Share API.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages two">
-                        <div class="tech-icon">
-                            <img src="./img/python_icon.svg" alt="python" class="tech-icon-img">
-                            <p class="tech-icon__label">Python</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/typescript_icon.svg" alt="typescript" class="tech-icon-img">
-                            <p class="tech-icon__label">TypeScript</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other">
-                        <div class="tech-icon">
-                            <img src="./img/graphql_icon.svg" alt="graphql" class="tech-icon-img">
-                            <p class="tech-icon__label">GraphQL</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/docker_icon.svg" alt="docker" class="tech-icon-img">
-                            <p class="tech-icon__label">Docker</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/digitalocean_icon.svg" alt="digital ocean" class="tech-icon-img">
-                            <p class="tech-icon__label">DigitalOcean</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links">
-                        <a href="https://github.com/rdghosal/nyayumi_neko_cafe" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="http://nyayumiscatcafe.com/" class="card__project-link" target="_blank">See Site</a>
-                    </div>
-                </div>
+      <nav class="nav">
+        <a href="#" class="logo">Rahul D. Ghosal</a>
+        <ul class="nav__nav-links">
+          <li>
+            <a href="#web" class="nav-link web">Web</a>
+          </li>
+          <li>
+            <a href="#mobile" class="nav-link mobile">Mobile</a>
+          </li>
+          <li>
+            <a href="#misc" class="nav-link misc">Misc</a>
+          </li>
+        </ul>
+        <svg
+          width="50"
+          height="50"
+          class="nav__home-btn"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M46.2158 24.6582L26.1035 4.56057C25.9587 4.41547 25.7867 4.30036 25.5973 4.22181C25.408 4.14327 25.205 4.10284 25 4.10284C24.795 4.10284 24.592 4.14327 24.4027 4.22181C24.2133 4.30036 24.0413 4.41547 23.8965 4.56057L3.78418 24.6582C3.19824 25.2442 2.86621 26.0401 2.86621 26.8701C2.86621 28.5938 4.26758 29.9951 5.99121 29.9951H8.11035V44.336C8.11035 45.2002 8.80859 45.8985 9.67285 45.8985H21.875V34.961H27.3437V45.8985H40.3271C41.1914 45.8985 41.8896 45.2002 41.8896 44.336V29.9951H44.0088C44.8389 29.9951 45.6348 29.668 46.2207 29.0772C47.4365 27.8565 47.4365 25.8789 46.2158 24.6582V24.6582Z"
+            fill="#0E3E68"
+          />
+        </svg>
+      </nav>
+      <div class="container--web container" id="web">
+        <h1 class="section-title">Web Applications</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__project-title">Wave Native</div>
+            <div class="card__project-subtitle">
+              Flask / React Audio Data Visualizer
             </div>
-        </div>
-        <div class="container--mobile container" id="mobile">
-            <h1 class="section-title">
-                Mobile Applications
-            </h1>
-            <div class="card-container one">
-                <div class="card">
-                    <div class="card__project-title">
-                        Twours
-                    </div>
-                    <div class="card__project-subtitle">
-                        Spring Boot / React Native Travel Planning Platform
-                    </div>
-                    <div class="card__project-desc">
-                        Provides user an intinerary object than can be privately edited.
-                        This intinerary may also be shared via a forum-like platform, wherein other users can propose edits to improve travel experience.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages">
-                        <div class="tech-icon">
-                            <img src="./img/kotlin_icon.svg" alt="kotlin" class="tech-icon-img">
-                            <p class="tech-icon__label">Kotlin</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/typescript_icon.svg" alt="typescript" class="tech-icon-img">
-                            <p class="tech-icon__label">TypeScript</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/sql_icon.svg" alt="sql" class="tech-icon-img">
-                            <p class="tech-icon__label">SQL</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other">
-                        <div class="tech-icon">
-                            <img src="./img/graphql_icon.svg" alt="graphql" class="tech-icon-img">
-                            <p class="tech-icon__label">GraphQL</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/kafka_icon.svg" alt="kafka" class="tech-icon-img">
-                            <p class="tech-icon__label">Kafka</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/aws_icon.svg" alt="aws" class="tech-icon-img">
-                            <p class="tech-icon__label">AWS</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links private-site private-repo">
-                        <a href="" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="" class="card__project-link" target="_blank">See Site</a>
-                        <p class="project-link-fallback">No links available</p>
-                    </div>
-                </div>
+            <div class="card__project-desc">
+              Queries third-party API for audio file of a user-specified English
+              word and renders visualization. Tracks most popular queries made
+              by user, a list of which is acceessible upon user registration.
             </div>
-        </div>
-        <div class="container--misc container" id="misc">
-            <h1 class="section-title">
-                Scripts & More
-            </h1>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card__project-title">
-                        NJ MVC Watcher
-                    </div>
-                    <div class="card__project-subtitle">
-                        Selenium (Python) Web Crawling Bot
-                    </div>
-                    <div class="card__project-desc">
-                        Crawls the New Jersey Motor Vehicle Commission's website in search for string data that indicates an available time slot
-                        for some user-specified service, such as a driver's test or written examination, at a particular city.
-                        May be run by means of a cron job.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages two">
-                        <div class="tech-icon">
-                            <img src="./img/python_icon.svg" alt="python" class="tech-icon-img">
-                            <p class="tech-icon__label">Python</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/bash_icon.svg" alt="bash" class="tech-icon-img">
-                            <p class="tech-icon__label">Bash</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other two">
-                        <div class="tech-icon">
-                            <img src="./img/selenium_icon.svg" alt="selenium" class="tech-icon-img">
-                            <p class="tech-icon__label">Selenium</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/aws_icon.svg" alt="aws" class="tech-icon-img">
-                            <p class="tech-icon__label">AWS</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links private-site">
-                        <a href="https://github.com/rdghosal/njmvc_checker.py" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="" class="card__project-link" target="_blank">See Site</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__project-title">
-                        Honyaku.py
-                    </div>
-                    <div class="card__project-subtitle">
-                        Python Web Scraper (Command Line Utility)
-                    </div>
-                    <div class="card__project-desc">
-                        Recursively visits every internal link to a user-specified root URL, where the application extracts text data, identifies the language of the text, and outputs the extracted text to either a CSV or text file.
-                        Capable of parsing both statically and dynamically rendered content by switching the web scraping algorithm.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages one">
-                        <div class="tech-icon">
-                            <img src="./img/python_icon.svg" alt="python" class="tech-icon-img">
-                            <p class="tech-icon__label">Python</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other one">
-                        <div class="tech-icon">
-                            <img src="./img/selenium_icon.svg" alt="selenium" class="tech-icon-img">
-                            <p class="tech-icon__label">Selenium</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links private-site">
-                        <a href="https://github.com/rdghosal/Honyaku.py" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="" class="card__project-link" target="_blank">See Site</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__project-title">
-                        kintoneScripts
-                    </div>
-                    <div class="card__project-subtitle">
-                        JavaScript Fuzzy String Matching Search Box Add-On
-                    </div>
-                    <div class="card__project-desc">
-                        Renders a search bar and dropdown in a table app built in Kintone for the user to select a particular table field and input a query for relevant records without providing a perfectly matching search criteria.
-                        Can search through both numeric and string data types.
-                    </div>
-                    <div class="card__tech-container-label">
-                        Languages
-                    </div>
-                    <div class="card__tech-container languages one">
-                        <div class="tech-icon">
-                            <img src="./img/javascript_icon.svg" alt="javascript" class="tech-icon-img">
-                            <p class="tech-icon__label">JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="card__tech-container-label">
-                        Other tech
-                    </div>
-                    <div class="card__tech-container other two">
-                        <div class="tech-icon">
-                            <img src="./img/bootstrap_icon.svg" alt="bootstrap" class="tech-icon-img">
-                            <p class="tech-icon__label">Bootstrap</p>
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./img/kintone_icon.svg" alt="graphql" class="tech-icon-img">
-                            <p class="tech-icon__label">Kintone API</p>
-                        </div>
-                    </div>
-                    <div class="card__project-links private-site">
-                        <a href="https://github.com/rdghosal/kintoneScripts" class="card__project-link" target="_blank">See Repo</a>
-                        <a href="" class="card__project-link" target="_blank">See Site</a>
-                    </div>
-                </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages">
+              <div class="tech-icon">
+                <img
+                  src="./img/python_icon.svg"
+                  alt="python"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Python</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/javascript_icon.svg"
+                  alt="javascript"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">JavaScript</p>
+              </div>
+              <div class="tech-icon">
+                <img src="./img/sql_icon.svg" alt="sql" class="tech-icon-img" />
+                <p class="tech-icon__label">SQL</p>
+              </div>
             </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other">
+              <div class="tech-icon">
+                <img
+                  src="./img/postgresql_icon.svg"
+                  alt="postgresql"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Postgresql</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/bootstrap_icon.svg"
+                  alt="bootstrap"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Bootstrap</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/heroku_icon.svg"
+                  alt="heroku"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Heroku</p>
+              </div>
+            </div>
+            <div class="card__project-links">
+              <a
+                href="https://github.com/rdghosal/WaveNative"
+                class="card__project-link"
+                target="_blank"
+                >See Repo</a
+              >
+              <a
+                href="https://wave-native.herokuapp.com"
+                class="card__project-link"
+                target="_blank"
+                >See Site</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__project-title">Better Bard</div>
+            <div class="card__project-subtitle">
+              .NET Core / React Typing Speed Test
+            </div>
+            <div class="card__project-desc">
+              Provides 154 Shakespeare sonnets for user to hone their typing
+              speed and accuracy. Time, accuracy, and other metrics are
+              accessible upon user registration and JWT login authentication.
+            </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages">
+              <div class="tech-icon">
+                <img
+                  src="./img/csharp_icon.svg"
+                  alt="csharp"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">C Sharp</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/typescript_icon.svg"
+                  alt="typescript"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">TypeScript</p>
+              </div>
+              <div class="tech-icon">
+                <img src="./img/sql_icon.svg" alt="sql" class="tech-icon-img" />
+                <p class="tech-icon__label">SQL</p>
+              </div>
+            </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other">
+              <div class="tech-icon">
+                <img
+                  src="./img/mssql_icon.svg"
+                  alt="mssql"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">MSSQL</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/docker_icon.svg"
+                  alt="docker"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Docker</p>
+              </div>
+              <div class="tech-icon">
+                <img src="./img/aws_icon.svg" alt="aws" class="tech-icon-img" />
+                <p class="tech-icon__label">AWS</p>
+              </div>
+            </div>
+            <div class="card__project-links private-site">
+              <a
+                href="https://github.com/rdghosal/TypeOnWillie"
+                class="card__project-link"
+                target="_blank"
+                >See Repo</a
+              >
+              <a href="" class="card__project-link" target="_blank">See Site</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__project-title">Nyayumi's Cat Café</div>
+            <div class="card__project-subtitle">
+              Flask / React Cat Image Searching and Sharing
+            </div>
+            <div class="card__project-desc">
+              Provides interface similar to Instragram for user to search for a
+              random collection of cat images filtered by cat breed or category
+              (such as 'hats', 'sunglasses', etc.). Images can be downloaded
+              locally or shared using the Web Share API.
+            </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages two">
+              <div class="tech-icon">
+                <img
+                  src="./img/python_icon.svg"
+                  alt="python"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Python</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/typescript_icon.svg"
+                  alt="typescript"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">TypeScript</p>
+              </div>
+            </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other">
+              <div class="tech-icon">
+                <img
+                  src="./img/graphql_icon.svg"
+                  alt="graphql"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">GraphQL</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/docker_icon.svg"
+                  alt="docker"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Docker</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/digitalocean_icon.svg"
+                  alt="digital ocean"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">DigitalOcean</p>
+              </div>
+            </div>
+            <div class="card__project-links">
+              <a
+                href="https://github.com/rdghosal/nyayumi_neko_cafe"
+                class="card__project-link"
+                target="_blank"
+                >See Repo</a
+              >
+              <a
+                href="http://nyayumiscatcafe.com/"
+                class="card__project-link"
+                target="_blank"
+                >See Site</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container--mobile container" id="mobile">
+        <h1 class="section-title">Mobile Applications</h1>
+        <div class="card-container one">
+          <div class="card">
+            <div class="card__project-title">Twours</div>
+            <div class="card__project-subtitle">
+              Spring Boot / React Native Travel Planning Platform
+            </div>
+            <div class="card__project-desc">
+              Provides user an intinerary object than can be privately edited.
+              This intinerary may also be shared via a forum-like platform,
+              wherein other users can propose edits to improve travel
+              experience.
+            </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages">
+              <div class="tech-icon">
+                <img
+                  src="./img/kotlin_icon.svg"
+                  alt="kotlin"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Kotlin</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/typescript_icon.svg"
+                  alt="typescript"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">TypeScript</p>
+              </div>
+              <div class="tech-icon">
+                <img src="./img/sql_icon.svg" alt="sql" class="tech-icon-img" />
+                <p class="tech-icon__label">SQL</p>
+              </div>
+            </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other">
+              <div class="tech-icon">
+                <img
+                  src="./img/graphql_icon.svg"
+                  alt="graphql"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">GraphQL</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/kafka_icon.svg"
+                  alt="kafka"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Kafka</p>
+              </div>
+              <div class="tech-icon">
+                <img src="./img/aws_icon.svg" alt="aws" class="tech-icon-img" />
+                <p class="tech-icon__label">AWS</p>
+              </div>
+            </div>
+            <div class="card__project-links private-site private-repo">
+              <a href="" class="card__project-link" target="_blank">See Repo</a>
+              <a href="" class="card__project-link" target="_blank">See Site</a>
+              <p class="project-link-fallback">No links available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container--misc container" id="misc">
+        <h1 class="section-title">Scripts &amp; More</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__project-title">NJ MVC Watcher</div>
+            <div class="card__project-subtitle">
+              Selenium (Python) Web Crawling Bot
+            </div>
+            <div class="card__project-desc">
+              Crawls the New Jersey Motor Vehicle Commission's website in search
+              for string data that indicates an available time slot for some
+              user-specified service, such as a driver's test or written
+              examination, at a particular city. May be run by means of a cron
+              job.
+            </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages two">
+              <div class="tech-icon">
+                <img
+                  src="./img/python_icon.svg"
+                  alt="python"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Python</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/bash_icon.svg"
+                  alt="bash"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Bash</p>
+              </div>
+            </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other two">
+              <div class="tech-icon">
+                <img
+                  src="./img/selenium_icon.svg"
+                  alt="selenium"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Selenium</p>
+              </div>
+              <div class="tech-icon">
+                <img src="./img/aws_icon.svg" alt="aws" class="tech-icon-img" />
+                <p class="tech-icon__label">AWS</p>
+              </div>
+            </div>
+            <div class="card__project-links private-site">
+              <a
+                href="https://github.com/rdghosal/njmvc_checker.py"
+                class="card__project-link"
+                target="_blank"
+                >See Repo</a
+              >
+              <a href="" class="card__project-link" target="_blank">See Site</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__project-title">Honyaku.py</div>
+            <div class="card__project-subtitle">
+              Python Web Scraper (Command Line Utility)
+            </div>
+            <div class="card__project-desc">
+              Recursively visits every internal link to a user-specified root
+              URL, where the application extracts text data, identifies the
+              language of the text, and outputs the extracted text to either a
+              CSV or text file. Capable of parsing both statically and
+              dynamically rendered content by switching the web scraping
+              algorithm.
+            </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages one">
+              <div class="tech-icon">
+                <img
+                  src="./img/python_icon.svg"
+                  alt="python"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Python</p>
+              </div>
+            </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other one">
+              <div class="tech-icon">
+                <img
+                  src="./img/selenium_icon.svg"
+                  alt="selenium"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Selenium</p>
+              </div>
+            </div>
+            <div class="card__project-links private-site">
+              <a
+                href="https://github.com/rdghosal/Honyaku.py"
+                class="card__project-link"
+                target="_blank"
+                >See Repo</a
+              >
+              <a href="" class="card__project-link" target="_blank">See Site</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__project-title">kintoneScripts</div>
+            <div class="card__project-subtitle">
+              JavaScript Fuzzy String Matching Search Box Add-On
+            </div>
+            <div class="card__project-desc">
+              Renders a search bar and dropdown in a table app built in Kintone
+              for the user to select a particular table field and input a query
+              for relevant records without providing a perfectly matching search
+              criteria. Can search through both numeric and string data types.
+            </div>
+            <div class="card__tech-container-label">Languages</div>
+            <div class="card__tech-container languages one">
+              <div class="tech-icon">
+                <img
+                  src="./img/javascript_icon.svg"
+                  alt="javascript"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">JavaScript</p>
+              </div>
+            </div>
+            <div class="card__tech-container-label">Other tech</div>
+            <div class="card__tech-container other two">
+              <div class="tech-icon">
+                <img
+                  src="./img/bootstrap_icon.svg"
+                  alt="bootstrap"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Bootstrap</p>
+              </div>
+              <div class="tech-icon">
+                <img
+                  src="./img/kintone_icon.svg"
+                  alt="graphql"
+                  class="tech-icon-img"
+                />
+                <p class="tech-icon__label">Kintone API</p>
+              </div>
+            </div>
+            <div class="card__project-links private-site">
+              <a
+                href="https://github.com/rdghosal/kintoneScripts"
+                class="card__project-link"
+                target="_blank"
+                >See Repo</a
+              >
+              <a href="" class="card__project-link" target="_blank">See Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="footer" id="contacts">
-        <svg width="397" height="397" viewBox="0 0 397 397" fill="none" class="footer__design">
-            <g clip-path="url(#clip0_18_6)">
-                <path d="M158.841 69.1109L148.318 93.9068C162.191 95.4144 181.045 98.8502 194.474 102.877L205.218 77.4429C193.303 74.3458 172.5 70.4255 158.841 69.1109ZM181.565 32.6697L170.605 57.9118C184.699 58.7809 203.55 62.6321 216.983 65.8292L227.726 40.3954C215.81 37.7131 195.005 34.2074 181.565 32.6697ZM58.9612 236.036L89.203 262.927C95.0902 256.083 106.207 243.893 115.577 234.314L213.416 134.299L320.127 229.183C328.118 236.29 335.677 243.427 341.94 249.412L373.536 217.113C366.404 211.604 354.52 201.87 347.175 195.339L235.281 95.8449C228.801 90.0825 220.812 82.1461 215.846 77.3136C212.357 81.2928 203.638 91.0322 197.319 97.492L87.4939 209.76C80.0851 217.333 68.106 228.34 58.9612 236.036ZM173.64 343.005L204.746 370.665C211.073 362.545 223.062 349.465 231.56 340.776L348.357 221.381L319.844 196.028L202.175 316.314C192.369 326.338 181.697 336.009 173.64 343.005Z" fill="#0E3E68"/>
-                <path d="M114.197 251.711L126.572 267.493C129.917 263.207 135.081 257.406 139.213 252.945C146.601 244.966 180.158 208.727 187.044 201.289C191.677 196.285 197.752 190.173 201.198 186.9L188.823 171.118C185.824 175.255 179.879 182.123 175.871 186.45C168.609 194.294 135.678 229.857 127.79 238.376C123.533 242.974 117.958 248.546 114.197 251.711ZM227.167 194.951L210.693 200.188C209.606 202.93 206.606 207.066 202.474 211.529C193.959 220.724 149.133 269.134 140.619 278.329C136.612 282.656 131.068 287.972 125.303 293.301L137.677 309.082C142.651 303.038 148.816 296.156 151.947 292.776C163.091 280.741 206.039 234.36 212.3 227.599C215.407 236.574 217.396 248.549 215.9 262.271C213.779 282.274 205.066 306.256 189.205 330.56L212.483 330.755C224.988 308.955 234.638 283.513 236.528 256.137C237.987 236.176 234.043 218.465 228.691 202.497C228.115 200.877 227.528 197.476 227.167 194.951Z" fill="#0E3E68"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_18_6">
-                <rect width="397" height="397" fill="white"/>
-            </clipPath>
-            </defs>
-        </svg>
+      <svg
+        width="397"
+        height="397"
+        viewBox="0 0 397 397"
+        fill="none"
+        class="footer__design"
+      >
+        <g clip-path="url(#clip0_18_6)">
+          <path
+            d="M158.841 69.1109L148.318 93.9068C162.191 95.4144 181.045 98.8502 194.474 102.877L205.218 77.4429C193.303 74.3458 172.5 70.4255 158.841 69.1109ZM181.565 32.6697L170.605 57.9118C184.699 58.7809 203.55 62.6321 216.983 65.8292L227.726 40.3954C215.81 37.7131 195.005 34.2074 181.565 32.6697ZM58.9612 236.036L89.203 262.927C95.0902 256.083 106.207 243.893 115.577 234.314L213.416 134.299L320.127 229.183C328.118 236.29 335.677 243.427 341.94 249.412L373.536 217.113C366.404 211.604 354.52 201.87 347.175 195.339L235.281 95.8449C228.801 90.0825 220.812 82.1461 215.846 77.3136C212.357 81.2928 203.638 91.0322 197.319 97.492L87.4939 209.76C80.0851 217.333 68.106 228.34 58.9612 236.036ZM173.64 343.005L204.746 370.665C211.073 362.545 223.062 349.465 231.56 340.776L348.357 221.381L319.844 196.028L202.175 316.314C192.369 326.338 181.697 336.009 173.64 343.005Z"
+            fill="#0E3E68"
+          />
+          <path
+            d="M114.197 251.711L126.572 267.493C129.917 263.207 135.081 257.406 139.213 252.945C146.601 244.966 180.158 208.727 187.044 201.289C191.677 196.285 197.752 190.173 201.198 186.9L188.823 171.118C185.824 175.255 179.879 182.123 175.871 186.45C168.609 194.294 135.678 229.857 127.79 238.376C123.533 242.974 117.958 248.546 114.197 251.711ZM227.167 194.951L210.693 200.188C209.606 202.93 206.606 207.066 202.474 211.529C193.959 220.724 149.133 269.134 140.619 278.329C136.612 282.656 131.068 287.972 125.303 293.301L137.677 309.082C142.651 303.038 148.816 296.156 151.947 292.776C163.091 280.741 206.039 234.36 212.3 227.599C215.407 236.574 217.396 248.549 215.9 262.271C213.779 282.274 205.066 306.256 189.205 330.56L212.483 330.755C224.988 308.955 234.638 283.513 236.528 256.137C237.987 236.176 234.043 218.465 228.691 202.497C228.115 200.877 227.528 197.476 227.167 194.951Z"
+            fill="#0E3E68"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_18_6">
+            <rect width="397" height="397" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
 
-        <div class="footer__credits">
-            <p>Designed and coded (in vanilla!) by:</p>
-            <p class="name">Rahul D. Ghosal</p>
-        </div>
-        <div class="footer__social-links">
-            <a href="https://www.linkedin.com/in/rahul-d-ghosal" class="social-link" target="_blank">
-                <img src="./img/linkedin.svg" alt="linkedin" class="social-link__icon">
-            </a>
-            <a href="https://www.github.com/rdghosal" class="social-link" target="_blank">
-                <img src="./img/github.svg" alt="github" class="social-link__icon">
-            </a>
-            <a href="mailto:rdghosal@gmail.com" class="social-link" target="_blank">
-                <img src="./img/email.svg" alt="email" class="social-link__icon">
-            </a>
-        </div>
+      <div class="footer__credits">
+        <p>Designed and coded (in vanilla!) by:</p>
+        <p class="name">Rahul D. Ghosal</p>
+      </div>
+      <div class="footer__social-links">
+        <a
+          href="https://www.linkedin.com/in/rahul-d-ghosal"
+          class="social-link"
+          target="_blank"
+        >
+          <img
+            src="./img/linkedin.svg"
+            alt="linkedin"
+            class="social-link__icon"
+          />
+        </a>
+        <a
+          href="https://www.github.com/rdghosal"
+          class="social-link"
+          target="_blank"
+        >
+          <img src="./img/github.svg" alt="github" class="social-link__icon" />
+        </a>
+        <a href="mailto:rdghosal@gmail.com" class="social-link" target="_blank">
+          <img src="./img/email.svg" alt="email" class="social-link__icon" />
+        </a>
+      </div>
     </section>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
