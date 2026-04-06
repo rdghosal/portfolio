@@ -1,0 +1,623 @@
+{
+  "color": {
+    "palette": {
+      "graphite": {
+        "value": "#343434",
+        "type": "color",
+        "description": "Near-black used for dark text and primary-dark semantic"
+      },
+      "twilight-indigo": {
+        "value": "#2f3061",
+        "type": "color",
+        "description": "Deep indigo used for hero bg, nav, footer, and primary-med semantic"
+      },
+      "blue-energy": {
+        "value": "#4392f1",
+        "type": "color",
+        "description": "Bright blue used for card links and card background tinting"
+      },
+      "cinnabar": {
+        "value": "#dc493a",
+        "type": "color",
+        "description": "Warm red used for accent buttons and active nav states"
+      },
+      "parchment": {
+        "value": "#f6f0ed",
+        "type": "color",
+        "description": "Off-white used for nav bg, portfolio section bg, and primary-light semantic"
+      },
+      "card-blue": {
+        "value": "#dcefff",
+        "type": "color",
+        "description": "Soft blue tint used as card background"
+      }
+    },
+    "semantic": {
+      "primary-med": {
+        "value": "{color.palette.twilight-indigo.value}",
+        "type": "color",
+        "description": "Hero, footer, nav link text, card tech border"
+      },
+      "primary-dark": {
+        "value": "{color.palette.graphite.value}",
+        "type": "color",
+        "description": "Section titles, body text on light backgrounds"
+      },
+      "primary-light": {
+        "value": "{color.palette.parchment.value}",
+        "type": "color",
+        "description": "Nav background, portfolio section background, footer text"
+      },
+      "accent-med": {
+        "value": "{color.palette.cinnabar.value}",
+        "type": "color",
+        "description": "CTA buttons, active nav links, section-title underline"
+      },
+      "accent-light": {
+        "value": "#e87a6f",
+        "type": "color",
+        "description": "Button hover/focus state; lighter variant of cinnabar"
+      },
+      "accent-link": {
+        "value": "{color.palette.blue-energy.value}",
+        "type": "color",
+        "description": "Card project links"
+      }
+    },
+    "surface": {
+      "hero": {
+        "value": "{color.semantic.primary-med.value}",
+        "type": "color"
+      },
+      "nav": {
+        "value": "{color.semantic.primary-light.value}",
+        "type": "color"
+      },
+      "portfolio": {
+        "value": "{color.semantic.primary-light.value}",
+        "type": "color"
+      },
+      "card": {
+        "value": "{color.palette.card-blue.value}",
+        "type": "color"
+      },
+      "card-hover": {
+        "value": "rgba(220, 239, 255, 0.8)",
+        "type": "color"
+      },
+      "footer": {
+        "value": "{color.semantic.primary-med.value}",
+        "type": "color"
+      }
+    },
+    "text": {
+      "on-dark": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Hero headline, hero body text, footer credits"
+      },
+      "on-dark-muted": {
+        "value": "rgba(255, 255, 255, 0.6)",
+        "type": "color",
+        "description": "Hero logo mark"
+      },
+      "on-light": {
+        "value": "{color.palette.graphite.value}",
+        "type": "color",
+        "description": "Card text, tech labels"
+      },
+      "on-light-muted": {
+        "value": "rgba(52, 52, 52, 0.5)",
+        "type": "color",
+        "description": "Private-repo italic label"
+      },
+      "nav-link": {
+        "value": "{color.semantic.primary-med.value}",
+        "type": "color"
+      },
+      "nav-link-hover": {
+        "value": "rgba(47, 48, 97, 0.5)",
+        "type": "color"
+      },
+      "nav-link-active": {
+        "value": "{color.semantic.accent-light.value}",
+        "type": "color"
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "header-bold": {
+        "value": "Quark-Bold, sans-serif",
+        "type": "fontFamilies",
+        "description": "Display headlines — hero, section titles"
+      },
+      "header-light": {
+        "value": "Quark-Light, sans-serif",
+        "type": "fontFamilies",
+        "description": "Logo mark and lighter display uses"
+      },
+      "text-med": {
+        "value": "Hanken-Book, sans-serif",
+        "type": "fontFamilies",
+        "description": "Body text, nav links, buttons, card metadata"
+      },
+      "text-light": {
+        "value": "Hanken-Light, sans-serif",
+        "type": "fontFamilies",
+        "description": "Hero body copy, card descriptions"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": "0.75rem",
+        "type": "fontSizes",
+        "description": "Tech icon labels (12px)"
+      },
+      "sm": {
+        "value": "0.9rem",
+        "type": "fontSizes",
+        "description": "Footer sub-credits (14.4px)"
+      },
+      "base": {
+        "value": "0.95rem",
+        "type": "fontSizes",
+        "description": "Hero body text (15.2px)"
+      },
+      "md": {
+        "value": "1rem",
+        "type": "fontSizes",
+        "description": "Emphasis spans, card project title (16px)"
+      },
+      "lg": {
+        "value": "1.1rem",
+        "type": "fontSizes",
+        "description": "Buttons, nav links mobile (17.6px)"
+      },
+      "xl": {
+        "value": "1.15rem",
+        "type": "fontSizes",
+        "description": "Card project links, footer name (18.4px)"
+      },
+      "xl2": {
+        "value": "1.2rem",
+        "type": "fontSizes",
+        "description": "Logo mark, card subtitle, nav links desktop (19.2px)"
+      },
+      "section-title": {
+        "value": "2.25rem",
+        "type": "fontSizes",
+        "description": "Section headings (36px)"
+      },
+      "hero-sm": {
+        "value": "3.25rem",
+        "type": "fontSizes",
+        "description": "Hero headline — mobile (52px)"
+      },
+      "hero-md": {
+        "value": "4rem",
+        "type": "fontSizes",
+        "description": "Hero headline — ≥550px (64px)"
+      },
+      "hero-lg": {
+        "value": "4.5rem",
+        "type": "fontSizes",
+        "description": "Hero headline — ≥1000px (72px)"
+      },
+      "hero-xl": {
+        "value": "5rem",
+        "type": "fontSizes",
+        "description": "Hero headline — ≥1250px (80px)"
+      },
+      "hero-2xl": {
+        "value": "5.5rem",
+        "type": "fontSizes",
+        "description": "Hero headline — ≥1450px (88px)"
+      }
+    },
+    "fontWeight": {
+      "light": {
+        "value": "300",
+        "type": "fontWeights",
+        "description": "Hero body text"
+      },
+      "regular": {
+        "value": "400",
+        "type": "fontWeights"
+      },
+      "medium": {
+        "value": "550",
+        "type": "fontWeights",
+        "description": "Nav links, footer name"
+      },
+      "semibold": {
+        "value": "575",
+        "type": "fontWeights",
+        "description": "Emphasis spans in hero text"
+      },
+      "semibold-strong": {
+        "value": "600",
+        "type": "fontWeights",
+        "description": "Card subtitle, tech container label"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeights",
+        "description": "Logo mark, active nav links"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "1.1",
+        "type": "lineHeights",
+        "description": "Hero headline"
+      },
+      "normal": {
+        "value": "1.5",
+        "type": "lineHeights",
+        "description": "Card subtitle, card description"
+      },
+      "relaxed": {
+        "value": "2",
+        "type": "lineHeights",
+        "description": "Footer credits"
+      },
+      "loose": {
+        "value": "2.25",
+        "type": "lineHeights",
+        "description": "Hero body text"
+      }
+    },
+    "letterSpacing": {
+      "tight": {
+        "value": "0.05em",
+        "type": "letterSpacing",
+        "description": "Card text, nav link labels"
+      },
+      "base": {
+        "value": "0.075em",
+        "type": "letterSpacing",
+        "description": "Hero headline, hero text, private-repo label"
+      },
+      "wide": {
+        "value": "0.1em",
+        "type": "letterSpacing",
+        "description": "Footer name"
+      },
+      "wider": {
+        "value": "0.15em",
+        "type": "letterSpacing",
+        "description": "Logo mark"
+      },
+      "widest": {
+        "value": "0.2em",
+        "type": "letterSpacing",
+        "description": "Emphasis spans in hero"
+      }
+    }
+  },
+
+  "spacing": {
+    "1": { "value": "0.25rem", "type": "spacing" },
+    "2": { "value": "0.5rem", "type": "spacing" },
+    "4": { "value": "1rem", "type": "spacing" },
+    "6": { "value": "1.5rem", "type": "spacing" },
+    "8": { "value": "2rem", "type": "spacing" },
+    "12": { "value": "3rem", "type": "spacing" },
+    "16": { "value": "4rem", "type": "spacing" },
+    "20": { "value": "5rem", "type": "spacing" }
+  },
+
+  "borderRadius": {
+    "sm": {
+      "value": "0.5rem",
+      "type": "borderRadius",
+      "description": "Buttons, card tech container"
+    },
+    "lg": {
+      "value": "1rem",
+      "type": "borderRadius",
+      "description": "Cards"
+    }
+  },
+
+  "borderWidth": {
+    "card-tech": {
+      "value": "2px",
+      "type": "borderWidths",
+      "description": "Card tech container and project-link divider"
+    },
+    "section-underline": {
+      "value": "3px",
+      "type": "borderWidths",
+      "description": "Section title accent underline"
+    }
+  },
+
+  "shadow": {
+    "card": {
+      "value": "0 2px 5px 0 #2d99f7",
+      "type": "boxShadow",
+      "description": "Resting card shadow — soft blue glow"
+    }
+  },
+
+  "sizing": {
+    "nav-height": {
+      "value": "65px",
+      "type": "sizing",
+      "description": "Sticky nav max-height"
+    },
+    "nav-home-btn": {
+      "value": "30px",
+      "type": "sizing"
+    },
+    "social-icon": {
+      "value": "40px",
+      "type": "sizing"
+    },
+    "tech-icon": {
+      "value": "50px",
+      "type": "sizing"
+    },
+    "section-underline-width": {
+      "value": "80px",
+      "type": "sizing"
+    }
+  },
+
+  "animation": {
+    "card-appear-duration": {
+      "value": "1500ms",
+      "type": "other"
+    },
+    "card-appear-easing": {
+      "value": "ease-out",
+      "type": "other"
+    },
+    "button-press-offset": {
+      "value": "translateY(3px)",
+      "type": "other",
+      "description": "Active/pressed state transform for buttons and card hover"
+    }
+  },
+
+  "component": {
+    "hero": {
+      "background": {
+        "value": "{color.surface.hero.value}",
+        "type": "color"
+      },
+      "padding": {
+        "value": "{spacing.12.value}",
+        "type": "spacing"
+      },
+      "headline-color": {
+        "value": "{color.text.on-dark.value}",
+        "type": "color"
+      },
+      "headline-font": {
+        "value": "{typography.fontFamily.header-bold.value}",
+        "type": "fontFamilies"
+      },
+      "headline-size-mobile": {
+        "value": "{typography.fontSize.hero-sm.value}",
+        "type": "fontSizes"
+      },
+      "headline-line-height": {
+        "value": "{typography.lineHeight.tight.value}",
+        "type": "lineHeights"
+      },
+      "headline-letter-spacing": {
+        "value": "{typography.letterSpacing.base.value}",
+        "type": "letterSpacing"
+      },
+      "text-color": {
+        "value": "{color.text.on-dark.value}",
+        "type": "color"
+      },
+      "text-font": {
+        "value": "{typography.fontFamily.text-light.value}",
+        "type": "fontFamilies"
+      },
+      "text-size": {
+        "value": "{typography.fontSize.base.value}",
+        "type": "fontSizes"
+      },
+      "text-line-height": {
+        "value": "{typography.lineHeight.loose.value}",
+        "type": "lineHeights"
+      },
+      "logo-color": {
+        "value": "{color.text.on-dark-muted.value}",
+        "type": "color"
+      },
+      "btn-background": {
+        "value": "{color.semantic.accent-med.value}",
+        "type": "color"
+      },
+      "btn-background-hover": {
+        "value": "{color.semantic.accent-light.value}",
+        "type": "color"
+      },
+      "btn-color": {
+        "value": "#333333",
+        "type": "color"
+      },
+      "btn-border-radius": {
+        "value": "{borderRadius.sm.value}",
+        "type": "borderRadius"
+      },
+      "btn-padding": {
+        "value": "{spacing.4.value}",
+        "type": "spacing"
+      },
+      "btn-font": {
+        "value": "{typography.fontFamily.text-med.value}",
+        "type": "fontFamilies"
+      },
+      "btn-font-size": {
+        "value": "{typography.fontSize.lg.value}",
+        "type": "fontSizes"
+      }
+    },
+    "nav": {
+      "background": {
+        "value": "{color.surface.nav.value}",
+        "type": "color"
+      },
+      "height": {
+        "value": "{sizing.nav-height.value}",
+        "type": "sizing"
+      },
+      "padding": {
+        "value": "1.5em 2em",
+        "type": "spacing",
+        "description": "mobile default; widens at each breakpoint"
+      },
+      "z-index": {
+        "value": "1000",
+        "type": "other"
+      },
+      "link-color": {
+        "value": "{color.text.nav-link.value}",
+        "type": "color"
+      },
+      "link-color-hover": {
+        "value": "{color.text.nav-link-hover.value}",
+        "type": "color"
+      },
+      "link-color-active": {
+        "value": "{color.text.nav-link-active.value}",
+        "type": "color"
+      },
+      "link-font": {
+        "value": "{typography.fontFamily.text-med.value}",
+        "type": "fontFamilies"
+      },
+      "link-weight-default": {
+        "value": "{typography.fontWeight.medium.value}",
+        "type": "fontWeights"
+      },
+      "link-weight-active": {
+        "value": "{typography.fontWeight.bold.value}",
+        "type": "fontWeights"
+      }
+    },
+    "card": {
+      "background": {
+        "value": "{color.surface.card.value}",
+        "type": "color"
+      },
+      "background-hover": {
+        "value": "{color.surface.card-hover.value}",
+        "type": "color"
+      },
+      "border-radius": {
+        "value": "{borderRadius.lg.value}",
+        "type": "borderRadius"
+      },
+      "shadow": {
+        "value": "{shadow.card.value}",
+        "type": "boxShadow"
+      },
+      "padding-mobile": {
+        "value": "{spacing.8.value}",
+        "type": "spacing"
+      },
+      "padding-desktop": {
+        "value": "3em 3em 2em",
+        "type": "spacing"
+      },
+      "tech-border-color": {
+        "value": "{color.semantic.primary-med.value}",
+        "type": "color"
+      },
+      "tech-border-width": {
+        "value": "{borderWidth.card-tech.value}",
+        "type": "borderWidths"
+      },
+      "tech-border-radius": {
+        "value": "{borderRadius.sm.value}",
+        "type": "borderRadius"
+      },
+      "link-color": {
+        "value": "{color.semantic.accent-link.value}",
+        "type": "color"
+      },
+      "link-color-hover": {
+        "value": "{color.text.nav-link-hover.value}",
+        "type": "color"
+      }
+    },
+    "footer": {
+      "background": {
+        "value": "{color.surface.footer.value}",
+        "type": "color"
+      },
+      "padding": {
+        "value": "{spacing.12.value}",
+        "type": "spacing"
+      },
+      "credits-color": {
+        "value": "{color.semantic.primary-light.value}",
+        "type": "color"
+      },
+      "credits-font": {
+        "value": "{typography.fontFamily.text-med.value}",
+        "type": "fontFamilies"
+      },
+      "credits-line-height": {
+        "value": "{typography.lineHeight.relaxed.value}",
+        "type": "lineHeights"
+      },
+      "credits-name-size": {
+        "value": "{typography.fontSize.xl.value}",
+        "type": "fontSizes"
+      },
+      "credits-name-weight": {
+        "value": "{typography.fontWeight.medium.value}",
+        "type": "fontWeights"
+      },
+      "credits-name-letter-spacing": {
+        "value": "{typography.letterSpacing.wide.value}",
+        "type": "letterSpacing"
+      },
+      "credits-sub-size": {
+        "value": "{typography.fontSize.sm.value}",
+        "type": "fontSizes"
+      },
+      "social-icon-size": {
+        "value": "{sizing.social-icon.value}",
+        "type": "sizing"
+      }
+    },
+    "section-title": {
+      "font": {
+        "value": "{typography.fontFamily.header-bold.value}",
+        "type": "fontFamilies"
+      },
+      "size": {
+        "value": "{typography.fontSize.section-title.value}",
+        "type": "fontSizes"
+      },
+      "color": {
+        "value": "{color.semantic.primary-dark.value}",
+        "type": "color"
+      },
+      "underline-color": {
+        "value": "{color.semantic.accent-med.value}",
+        "type": "color"
+      },
+      "underline-width": {
+        "value": "{sizing.section-underline-width.value}",
+        "type": "sizing"
+      },
+      "underline-height": {
+        "value": "{borderWidth.section-underline.value}",
+        "type": "borderWidths"
+      }
+    }
+  }
+}

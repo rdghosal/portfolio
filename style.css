@@ -19,11 +19,16 @@
 }
 
 :root {
-  --primary-clr-med: rgb(15 75 128);
-  --primary-clr-dark: rgb(14 62 104);
-  --primary-clr-light: rgb(130 197 255);
-  --accent-clr-med: rgb(250 220 115);
-  --accent-clr-light: rgb(243 227 185);
+  --graphite: #343434;
+  --twilight-indigo: #2f3061;
+  --blue-energy: #4392f1;
+  --cinnabar: #dc493a;
+  --parchment: #f6f0ed;
+  --primary-clr-med: var(--twilight-indigo);
+  --primary-clr-dark: var(--graphite);
+  --primary-clr-light: var(--parchment);
+  --accent-clr-med: var(--cinnabar);
+  --accent-clr-light: #e87a6f;
   --header-font-bold: "Quark-Bold", "sans-serif";
   --header-font-light: "Quark-Light", "sans-serif";
   --text-font-med: "Hanken-Book", "sans-serif";
@@ -178,7 +183,7 @@ nav > .logo {
 
 .nav-link:hover,
 .nav-link:active {
-  color: rgb(var(--primary-clr-dark), 0.5);
+  color: color-mix(in srgb, var(--twilight-indigo) 50%, transparent);
 }
 
 .nav__home-btn:hover,
@@ -376,7 +381,7 @@ nav > .logo {
 }
 
 .card__project-link {
-  color: #08f;
+  color: var(--blue-energy);
   width: 50%;
   font-size: 1.15rem;
   text-align: center;
@@ -387,7 +392,7 @@ nav > .logo {
 .nav > .logo:focus,
 .card__project-link:hover,
 .card__project-link:focus .card__project-link:active {
-  color: rgb(var(--primary-clr-dark), 0.5);
+  color: color-mix(in srgb, var(--twilight-indigo) 50%, transparent);
 }
 
 .card__project-links > *:nth-child(1) {
@@ -416,7 +421,7 @@ nav > .logo {
   width: 100%;
   text-align: center;
   font-family: var(--text-font-med);
-  color: rgb(51 51 51 / 50%);
+  color: color-mix(in srgb, var(--graphite) 50%, transparent);
   font-style: italic;
   letter-spacing: 0.075em;
 }
