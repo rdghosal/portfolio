@@ -26,11 +26,20 @@ function intializeResumeBtn() {
   });
 }
 
-const containerLinkMap = {
-  "container--web": ".nav-link.web",
-  "container--mobile": ".nav-link.mobile",
-  "container--misc": ".nav-link.misc",
-};
+function buildContainerLinkMap() {
+  const map = {};
+  document.querySelectorAll(".container").forEach((c) => {
+    const slug = [...c.classList]
+      .find((cls) => cls.startsWith("container--"))
+      ?.replace("container--", "");
+    if (slug) {
+      map[`container--${slug}`] = `.nav-link.${slug}`;
+    }
+  });
+  return map;
+}
+
+const containerLinkMap = buildContainerLinkMap();
 
 function initializeObservers() {
   const containers = document.querySelectorAll(".container");

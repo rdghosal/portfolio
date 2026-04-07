@@ -10,7 +10,8 @@
     "test:update": "playwright test --update-snapshots",
     "test:report": "playwright show-report",
     "lint:css": "stylelint 'style.css'",
-    "lint:css:fix": "stylelint 'style.css' --fix"
+    "lint:css:fix": "stylelint 'style.css' --fix",
+    "sync": "node .pi/skills/sync-portfolio/sync.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.1",
